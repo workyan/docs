@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>房东小账本隐私政策</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f5f0e8;
+        --paper: rgba(255, 252, 247, 0.92);
+        --ink: #261f1a;
+        --muted: #675b52;
+        --line: rgba(72, 56, 44, 0.12);
+        --brand: #b96c32;
+        --brand-soft: rgba(185, 108, 50, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Display", "PingFang SC", "Helvetica Neue", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(212, 181, 144, 0.35), transparent 28%),
+          linear-gradient(180deg, #fbf8f4 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 32px 0 72px;
+      }
+
+      .panel {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 28px;
+        box-shadow: 0 24px 80px rgba(56, 38, 22, 0.08);
+        backdrop-filter: blur(16px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--brand-soft);
+        color: var(--brand);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      h1,
+      h2 {
+        margin: 0;
+      }
+
+      h1 {
+        margin-top: 18px;
+        font-size: clamp(34px, 6vw, 52px);
+        line-height: 1.05;
+      }
+
+      .lead {
+        margin: 18px 0 0;
+        max-width: 720px;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.9;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 16px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .nav .primary {
+        background: var(--brand);
+        color: #fff;
+      }
+
+      .nav .secondary {
+        border: 1px solid var(--line);
+        color: var(--ink);
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .section {
+        margin-top: 28px;
+        padding-top: 28px;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 16px;
+        line-height: 1.9;
+      }
+
+      ul {
+        margin: 14px 0 0;
+        padding-left: 20px;
+      }
+
+      a {
+        color: var(--brand);
+      }
+
+      @media (max-width: 640px) {
+        .panel {
+          padding: 22px;
+          border-radius: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="panel">
+        <span class="eyebrow">房东小账本 · 隐私政策</span>
+        <h1>本地优先，尽量不把你的账本带离设备。</h1>
+        <p class="lead">
+          房东小账本是一款面向个人房东的 iPhone 工具，用于记录房源、租客、租金、水电结算和备份数据。我们按
+          “本地离线优先” 的思路设计产品，尽量减少信息收集和对外传输。
+        </p>
+
+        <div class="nav">
+          <a class="primary" href="./support.html">查看支持页面</a>
+          <a class="secondary" href="https://workyan.github.io/docs/fangdong-xiaozhangben/support.html">在线支持链接</a>
+        </div>
+
+        <section class="section">
+          <h2>1. 我们处理哪些信息</h2>
+          <ul>
+            <li>你主动录入的房源信息，例如房源名称、小区、房号、备注。</li>
+            <li>你主动录入的租务信息，例如租客姓名、手机号、合同日期、押金、租金记录。</li>
+            <li>你录入的水电燃气读数、费用、账单备注等账本内容。</li>
+            <li>你手动导入或导出的备份文件，例如 JSON 账本备份。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>2. 这些信息如何被使用</h2>
+          <ul>
+            <li>用于在应用内展示房源、收租记录、账单统计和备份恢复结果。</li>
+            <li>用于帮你完成本地记账、查阅历史记录和导出备份。</li>
+            <li>用于你主动触发的系统分享，例如把备份文件发送到其他 App 或设备。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>3. 数据存储方式</h2>
+          <ul>
+            <li>应用默认将账本数据保存在你的设备本地。</li>
+            <li>我们不要求注册账号，也不要求登录手机号、邮箱或社交账号。</li>
+            <li>当前版本不依赖自建云端账户系统来保存你的核心账本数据。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>4. 数据共享与对外传输</h2>
+          <ul>
+            <li>除非你主动执行导出、分享或备份操作，我们不会主动把账本内容上传给我们。</li>
+            <li>当你使用系统分享功能导出备份文件时，相关处理由 iOS 系统分享面板和你选择的目标 App 完成。</li>
+            <li>我们不出售你的个人信息，也不把你的账本内容用于广告投放。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>5. 第三方服务</h2>
+          <ul>
+            <li>当前版本未发现账号登录、广告 SDK 或第三方统计 SDK 的必要依赖。</li>
+            <li>应用会调用 iOS 提供的文件选择、文件分享等系统能力，以完成你主动发起的导入或导出操作。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>6. 你的选择</h2>
+          <ul>
+            <li>你可以自行决定是否录入房源和租客信息。</li>
+            <li>你可以通过删除应用或删除本地数据的方式停止继续保存账本内容。</li>
+            <li>你可以只使用本地记录功能，而不执行备份分享。</li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2>7. 未成年人隐私</h2>
+          <p>
+            本应用不是面向未成年人设计的独立服务，也不会刻意收集未成年人个人信息。如果你认为存在不适当的信息录入，请通过支持页面联系我们。
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>8. 政策更新</h2>
+          <p>
+            如果产品的数据处理方式发生实质变化，我们会在本页面更新内容并修改生效日期。
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>9. 联系方式</h2>
+          <p>
+            生效日期：2026-05-21<br />
+            支持页面：<a href="./support.html">support.html</a><br />
+            在线地址：<a href="https://workyan.github.io/docs/fangdong-xiaozhangben/privacy.html">https://workyan.github.io/docs/fangdong-xiaozhangben/privacy.html</a><br />
+            问题反馈：<a href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a>
+          </p>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

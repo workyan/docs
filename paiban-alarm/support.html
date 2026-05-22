@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>排班闹钟支持</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14212b;
+      --muted: #586774;
+      --line: #d5dee6;
+      --brand: #235a88;
+      --bg: #f3f7fb;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: clamp(20px, 5vw, 40px);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px;
+      background: #fbfdff;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>排班闹钟支持</h1>
+      <p class="meta">本页面用于 App Store 支持链接和审核说明。</p>
+
+      <h2>应用说明</h2>
+      <p>排班闹钟是一款面向轮班场景的本地提醒工具，支持维护排班模板、配置班次闹钟规则、设置到站提醒和补觉闹钟偏好。</p>
+
+      <h2>常见问题</h2>
+      <div class="box">
+        <p><strong>是否需要注册账号？</strong><br>不需要。当前版本没有登录、注册或订阅流程。</p>
+        <p><strong>数据会上传服务器吗？</strong><br>不会。当前版本不提供账号系统或云同步，排班模板和提醒偏好默认保存在本机。</p>
+        <p><strong>提醒为什么没有触发？</strong><br>请确认系统通知权限已开启，并检查应用内对应的班次提醒、到站提醒或补觉闹钟是否已启用。</p>
+        <p><strong>首次打开为什么是空白配置？</strong><br>当前版本已移除示例数据。首次启动后需要你自行创建排班模板和提醒规则。</p>
+      </div>
+
+      <h2>问题反馈</h2>
+      <p>如需反馈问题，请通过 App Store 页面中的开发者联系方式联系开发者。反馈时建议附带设备型号、iOS 版本、应用版本、问题复现步骤和截图。</p>
+
+      <h2>审核说明</h2>
+      <p>本应用无需测试账号，也不依赖后端服务。审核人员安装后即可直接进入应用，创建排班模板并测试班次提醒、到站提醒和补觉闹钟相关流程。</p>
+
+      <h2>隐私政策</h2>
+      <p>请查看 <a href="./privacy.html">排班闹钟隐私政策</a>。</p>
+    </article>
+  </main>
+</body>
+</html>

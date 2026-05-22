@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>提前还贷-房贷计算器 - 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f1e8;
+      --paper: rgba(255, 253, 249, 0.92);
+      --ink: #1f2722;
+      --muted: #5b6762;
+      --line: rgba(70, 82, 76, 0.14);
+      --brand: #3c6e57;
+      --brand-soft: rgba(60, 110, 87, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(142, 181, 161, 0.32), transparent 28%),
+        linear-gradient(180deg, #fbf8f2 0%, var(--bg) 100%);
+      line-height: 1.8;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 72px;
+    }
+
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px;
+      box-shadow: 0 24px 80px rgba(31, 39, 34, 0.08);
+      backdrop-filter: blur(14px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    h1 {
+      margin-top: 18px;
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .lead {
+      margin-top: 18px;
+      max-width: 740px;
+      font-size: 17px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 16px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .secondary {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+
+    .section {
+      margin-top: 28px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    ul {
+      margin: 14px 0 0;
+      padding-left: 20px;
+    }
+
+    a {
+      color: var(--brand);
+    }
+
+    @media (max-width: 640px) {
+      .panel {
+        padding: 22px;
+        border-radius: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="panel">
+      <span class="eyebrow">提前还贷-房贷计算器 · 隐私政策</span>
+      <h1>贷款测算应尽量留在你的设备里，而不是先发到别处。</h1>
+      <p class="lead">
+        提前还贷-房贷计算器用于帮助用户在 iPhone 上进行房贷、提前还款与利息对比测算。当前版本按本地优先方式设计，
+        尽量减少信息收集和对外传输。
+      </p>
+
+      <div class="nav">
+        <a class="primary" href="./support.html">查看支持页面</a>
+        <a class="secondary" href="https://workyan.github.io/docs/tiqian-huandai-helper/support.html">在线支持链接</a>
+      </div>
+
+      <section class="section">
+        <h2>1. 我们处理哪些信息</h2>
+        <ul>
+          <li>你主动输入的贷款金额、利率、期限、已还期数、提前还款金额等测算数据。</li>
+          <li>你主动保存的测算记录、偏好设置和本地历史记录。</li>
+          <li>你主动通过系统分享功能导出的结果内容。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>2. 这些信息如何被使用</h2>
+        <ul>
+          <li>用于在应用内生成月供、总利息、缩期或减月供等测算结果。</li>
+          <li>用于保存你本机上的历史记录，方便后续比较不同方案。</li>
+          <li>用于执行你主动发起的导出或分享操作。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>3. 数据存储方式</h2>
+        <ul>
+          <li>应用默认将测算数据保存在当前设备本地。</li>
+          <li>当前版本不要求注册账号，也不要求绑定手机号、邮箱或社交账号。</li>
+          <li>当前版本不依赖开发者自建服务器保存你的贷款测算内容。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. 数据共享与对外传输</h2>
+        <ul>
+          <li>除非你主动执行导出或分享操作，我们不会主动上传你的贷款测算数据。</li>
+          <li>如果你使用系统分享功能，相关内容将由 iOS 分享面板和你选择的目标应用处理。</li>
+          <li>我们不会出售你的个人信息，也不会基于贷款测算内容进行广告定向。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>5. 第三方服务</h2>
+        <ul>
+          <li>当前版本未发现必须接入账号登录、广告 SDK 或第三方统计 SDK 的必要性。</li>
+          <li>应用可能调用 iOS 提供的本地存储和系统分享能力，以完成你主动触发的操作。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>6. 你的选择</h2>
+        <ul>
+          <li>你可以自行决定是否录入任何贷款信息。</li>
+          <li>你可以删除应用或清除本地记录来停止继续保存这些数据。</li>
+          <li>你可以仅使用本地测算功能，而不进行导出和分享。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>7. 政策更新</h2>
+        <p>
+          如果未来版本引入新的数据处理方式，开发者会先更新本页内容，再发布相关版本。
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>8. 联系方式</h2>
+        <p>
+          如果你对本隐私政策有疑问，可以访问支持页面：
+          <a href="https://workyan.github.io/docs/tiqian-huandai-helper/support.html">https://workyan.github.io/docs/tiqian-huandai-helper/support.html</a>
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

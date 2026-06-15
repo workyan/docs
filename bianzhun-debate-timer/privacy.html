@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>辩准-辩论演讲计时器隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18202a;
+      --muted: #637083;
+      --line: #dde4ec;
+      --brand: #1b63d8;
+      --brand-soft: #eef5ff;
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --note: #f3f8ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f7faff 0%, var(--bg) 180px);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 72px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: clamp(22px, 5vw, 42px);
+      box-shadow: 0 18px 50px rgba(22, 40, 76, 0.08);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .notice,
+    .links {
+      border: 1px solid #cfe0fb;
+      background: var(--note);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin: 24px 0;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 14px;
+      margin-top: 6px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      background: var(--brand-soft);
+      padding: 1px 6px;
+      border-radius: 6px;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>辩准-辩论演讲计时器隐私政策</h1>
+      <p class="meta">生效日期：2026 年 6 月 15 日</p>
+
+      <p>辩准-辩论演讲计时器是一款面向辩论赛、演讲、答辩、课堂展示和路演场景的分段计时工具。本隐私政策说明应用会处理哪些信息、这些信息保存在哪里，以及你可以如何管理相关数据。</p>
+
+      <div class="notice">
+        <p><strong>简要说明：</strong>当前版本不需要注册账号，不接入广告 SDK，不提供云同步，不运行自有后端服务。你创建的模板、阶段设置、提醒偏好和最近使用记录默认仅保存在当前设备本机。</p>
+      </div>
+
+      <h2>1. 我们会处理哪些信息</h2>
+      <p>为了提供计时和模板管理功能，应用可能会在设备本机保存以下内容：</p>
+      <ul>
+        <li>模板数据：模板名称、模板描述、阶段名称、阶段时长、阶段顺序、预警秒数和结束提醒开关。</li>
+        <li>使用记录：最近一次使用的模板标识。</li>
+        <li>应用设置：声音提醒、振动提醒、视觉提醒、大号数字显示和常亮开关等偏好设置。</li>
+      </ul>
+
+      <h2>2. 数据保存位置</h2>
+      <p>上述数据默认保存在 iPhone 本机的应用沙盒中，用于在你下次打开应用时恢复计时模板和使用设置。根据当前代码实现，这些内容通过本地持久化存储保存，不会自动上传到开发者服务器。</p>
+
+      <h2>3. 我们不会做的事情</h2>
+      <ul>
+        <li>不会要求你创建账号、登录或提交手机号、邮箱等注册信息。</li>
+        <li>不会接入广告 SDK，也不会基于广告目的进行跨应用追踪。</li>
+        <li>不会把你的模板数据、阶段内容或设置上传到开发者服务器。</li>
+        <li>不会向第三方出售、出租或共享你的本地使用数据。</li>
+        <li>不会主动读取通讯录、照片、麦克风、摄像头或定位信息。</li>
+      </ul>
+
+      <h2>4. 设备功能调用说明</h2>
+      <p>应用会使用系统提供的本地能力来完成计时提醒体验：</p>
+      <ul>
+        <li>声音提醒：在倒计时预警或阶段结束时调用系统提示音。</li>
+        <li>振动反馈：在你启用振动提醒时调用系统触感反馈。</li>
+        <li>屏幕常亮：在你启用常亮开关时使用系统常亮能力，避免计时过程中自动锁屏。</li>
+      </ul>
+      <p>这些能力仅在当前设备上运行，不会把提醒内容或使用过程上传到服务器。</p>
+
+      <h2>5. 数据删除和更正</h2>
+      <p>你可以在应用内编辑、复制或删除自定义模板，也可以关闭或调整提醒和显示设置。若你希望移除全部本地数据，可删除相关模板，或直接卸载应用。卸载后，保存在应用沙盒内的本地数据通常会被系统一并移除。</p>
+
+      <h2>6. 儿童隐私</h2>
+      <p>本应用是效率工具，不包含面向儿童的社交或在线内容服务。我们不会主动收集儿童个人信息。</p>
+
+      <h2>7. 政策更新</h2>
+      <p>如果未来版本新增账号体系、云同步、联网接口或第三方服务，我们会同步更新本隐私政策，并在新版本中说明相关变化。</p>
+
+      <h2>8. 联系我们</h2>
+      <p>如需反馈隐私相关问题，可通过 App Store 页面中的开发者联系方式联系开发者，也可以访问支持页面获取反馈入口。</p>
+
+      <div class="links">
+        <strong>相关链接</strong><br>
+        <a href="./support.html">支持页面</a>
+        <a href="https://workyan.github.io/docs/bianzhun-debate-timer/support.html">在线支持地址</a>
+        <a href="https://github.com/workyan/docs/issues">GitHub Issues</a>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

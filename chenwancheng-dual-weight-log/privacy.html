@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晨晚秤隐私政策</title>
+  <meta name="description" content="晨晚秤 - 双时点体重记录的隐私政策。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1e2430;
+      --muted: #617080;
+      --line: #dce4ed;
+      --brand: #2d6a8a;
+      --bg: #f5f9fc;
+      --panel: rgba(255, 255, 255, 0.94);
+      --accent: #e7f2f8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      background:
+        radial-gradient(circle at top left, rgba(128, 190, 220, 0.28), transparent 30%),
+        linear-gradient(180deg, #f8fbfd 0%, var(--bg) 34%, var(--bg) 100%);
+    }
+
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: clamp(24px, 5vw, 40px);
+      box-shadow: 0 20px 60px rgba(41, 72, 94, 0.08);
+    }
+
+    .back-link,
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link:hover,
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    h1,
+    h2 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 6vw, 52px);
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0 0 8px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back-link" href="./support.html">查看支持页面</a>
+    <section class="panel">
+      <p class="tag">晨晚秤 - 双时点体重记录</p>
+      <h1>隐私政策</h1>
+      <p class="muted">最后更新：2026-06-25</p>
+
+      <p>
+        晨晚秤是一款以晨起和晚间双时点记录为核心的体重管理工具。当前版本采用本地优先设计，
+        不要求注册登录，也不通过开发者服务器存储你的体重记录、备注或目标数据。
+      </p>
+
+      <h2>1. 我们收集什么信息</h2>
+      <p>当前版本默认不收集以下个人信息或设备数据：</p>
+      <ul>
+        <li>姓名、手机号、邮箱地址等身份信息</li>
+        <li>定位、通讯录、照片、麦克风、相机内容</li>
+        <li>广告标识符、跨 App 跟踪信息</li>
+        <li>你的体重记录、备注内容、目标体重、趋势结论的服务器副本</li>
+      </ul>
+
+      <h2>2. 本地数据存储</h2>
+      <p>
+        为实现晨晚记录、历史回看、趋势展示和目标管理，App 会把你主动输入的体重数据、
+        备注和设置仅保存在当前设备本地。当前版本不提供账号同步，也不会自动上传到开发者服务器。
+      </p>
+
+      <h2>3. 第三方服务</h2>
+      <p>
+        当前版本未集成广告 SDK、第三方统计分析、崩溃上报或账号登录服务。核心功能可在离线状态下使用。
+      </p>
+
+      <h2>4. 数据控制与删除</h2>
+      <p>你可以通过以下方式管理本地数据：</p>
+      <ul>
+        <li>在 App 内删除单条晨重或晚重记录</li>
+        <li>在 App 内修改或清空备注、目标等内容</li>
+        <li>卸载 App，以移除设备本地保存的数据</li>
+      </ul>
+
+      <h2>5. 儿童隐私</h2>
+      <p>
+        本 App 面向一般用户的自我记录场景，不以儿童为主要目标用户。当前版本不主动收集儿童个人信息。
+      </p>
+
+      <h2>6. 政策更新</h2>
+      <p>
+        如果未来版本引入在线同步、健康数据接入、崩溃分析或其他会影响隐私处理方式的功能，
+        我们会先更新本页面，再根据实际情况同步更新 App Store 隐私披露。
+      </p>
+
+      <h2>7. 联系方式</h2>
+      <p>
+        如对本政策有疑问，或需要反馈使用问题，请访问
+        <a href="./support.html">支持页面</a> 获取联系入口。
+      </p>
+    </section>
+  </main>
+</body>
+</html>

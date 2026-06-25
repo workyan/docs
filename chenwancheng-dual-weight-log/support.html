@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>晨晚秤支持页面</title>
+  <meta name="description" content="晨晚秤 - 双时点体重记录的支持页面。">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #201d18;
+      --muted: #675e53;
+      --line: #e5ddd2;
+      --brand: #9a5a22;
+      --bg: #fbf7f2;
+      --panel: rgba(255, 253, 250, 0.95);
+      --accent: #f4e4d0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+      background:
+        radial-gradient(circle at top left, rgba(244, 210, 172, 0.35), transparent 30%),
+        linear-gradient(180deg, #fdfaf6 0%, var(--bg) 32%, var(--bg) 100%);
+    }
+
+    main {
+      width: min(820px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    .panel,
+    .notice {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 18px 56px rgba(107, 76, 38, 0.08);
+    }
+
+    .panel {
+      padding: clamp(24px, 5vw, 40px);
+    }
+
+    .notice {
+      padding: 18px 20px;
+      margin: 22px 0;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 700;
+      word-break: break-all;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 6vw, 52px);
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+
+    p,
+    li {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0 0 8px;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--brand);
+      font-size: 13px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel">
+      <p class="tag">晨晚秤 - 双时点体重记录</p>
+      <h1>支持页面</h1>
+      <p class="muted">面向 App Store 审核与用户问题反馈的支持入口。</p>
+
+      <p>
+        如果你在使用过程中遇到记录异常、趋势展示问题，或想反馈功能建议，
+        可以通过 GitHub Issues 提交说明。
+      </p>
+
+      <div class="notice">
+        <strong>支持入口：</strong>
+        <a href="https://github.com/workyan/docs/issues/new?title=%5B%E6%99%A8%E6%99%9A%E7%A7%A4%5D%20%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88&amp;body=%E8%AF%B7%E5%A1%AB%E5%86%99%EF%BC%9A%0A-%20%E8%AE%BE%E5%A4%87%E5%9E%8B%E5%8F%B7%0A-%20iOS%20%E7%89%88%E6%9C%AC%0A-%20App%20%E7%89%88%E6%9C%AC%0A-%20%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0%0A-%20%E9%87%8D%E7%8E%B0%E6%AD%A5%E9%AA%A4%0A-%20%E6%88%AA%E5%9B%BE%EF%BC%88%E5%A6%82%E6%9C%89%EF%BC%89">提交问题反馈</a>
+      </div>
+
+      <h2>建议附带的信息</h2>
+      <ul>
+        <li>设备型号与 iOS 版本</li>
+        <li>App 版本号</li>
+        <li>问题出现的页面，例如记录页、趋势页、历史页</li>
+        <li>预期结果、实际结果、重现步骤</li>
+        <li>相关截图</li>
+      </ul>
+
+      <h2>常见问题</h2>
+      <h3>1. App 是否需要联网或登录？</h3>
+      <p>当前版本不要求登录，核心记录与查看功能可离线使用。</p>
+
+      <h3>2. 体重数据会上传吗？</h3>
+      <p>不会。当前版本采用本地存储，体重记录、备注和目标数据默认只保存在设备本机。</p>
+
+      <h3>3. 这个 App 会提供医学或减重建议吗？</h3>
+      <p>不会。App 用于自我记录和趋势观察，不构成医疗建议。</p>
+
+      <h3>4. 如何删除数据？</h3>
+      <p>你可以在 App 内删除记录，或直接卸载 App 清除本地保存的数据。</p>
+
+      <h2>相关页面</h2>
+      <p><a href="./privacy.html">查看隐私政策</a></p>
+    </section>
+  </main>
+</body>
+</html>

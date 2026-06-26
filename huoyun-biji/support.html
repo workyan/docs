@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>货运笔记支持</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2d1f;
+      --muted: #5f6e60;
+      --line: #d8e2d6;
+      --brand: #2f7a45;
+      --bg: #f5f8f4;
+      --panel: #ffffff;
+      --soft: #f8fbf7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: clamp(22px, 5vw, 44px);
+      box-shadow: 0 12px 28px rgba(31, 45, 31, 0.05);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.24;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: var(--soft);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>货运笔记支持</h1>
+      <p class="meta">本页面用于 App Store 支持链接、用户帮助和审核说明。</p>
+
+      <h2>应用说明</h2>
+      <p>货运笔记是一款面向个体司机和小车队的离线运单收支记录工具，支持记录每趟运费、油费、过路费、装卸费、待收款与月度利润，帮助用户更快完成货运对账。</p>
+
+      <h2>常见问题</h2>
+      <div class="box">
+        <p><strong>是否需要注册账号？</strong><br>不需要。当前版本没有登录、注册或订阅流程。</p>
+        <p><strong>是否必须联网？</strong><br>不必须。当前版本以本地记录和统计为主，主要功能可直接在设备上使用。</p>
+        <p><strong>数据保存在哪里？</strong><br>默认保存在当前设备本机，不会自动上传到开发者服务器。</p>
+        <p><strong>如何备份或发送账单？</strong><br>你可以在应用内主动导出备份数据，或通过系统分享面板分享账单图片和导出内容。</p>
+        <p><strong>审核是否需要测试账号？</strong><br>不需要。本应用无需登录，安装后即可直接进入首页并使用主要功能。</p>
+      </div>
+
+      <h2>问题反馈</h2>
+      <p>如需反馈问题，请通过 App Store 页面中的开发者联系方式联系开发者。反馈时建议附带设备型号、iOS 版本、应用版本、问题复现步骤和截图，便于定位问题。</p>
+
+      <h2>审核说明</h2>
+      <p>本应用无需测试账号，不依赖开发者自有后端服务，不包含支付、社交发布或用户生成内容。审核人员安装后即可直接查看首页概览、运单记录、待收款汇总、月度统计与分享导出能力。</p>
+
+      <h2>重要提示</h2>
+      <p>货运笔记用于个人或小车队经营记录与对账辅助，不构成税务、审计或法律意见。</p>
+
+      <h2>隐私政策</h2>
+      <p>请查看 <a href="./privacy.html">货运笔记隐私政策</a>。</p>
+    </article>
+  </main>
+</body>
+</html>

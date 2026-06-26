@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>计件工资-记账计算器支持</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #16202a;
+      --muted: #5f6b78;
+      --line: #d9e0e7;
+      --brand: #0f766e;
+      --soft: #f3fbfa;
+      --bg: linear-gradient(180deg, #f2f8f7 0%, #f7fafc 100%);
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.68;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: clamp(22px, 5vw, 40px);
+      box-shadow: 0 18px 40px rgba(22, 32, 42, 0.05);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.24;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 26px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      background: var(--soft);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>计件工资-记账计算器支持</h1>
+      <p class="meta">本页面用于 App Store 支持链接和审核说明。</p>
+
+      <h2>应用说明</h2>
+      <p>计件工资-记账计算器是一款面向计件收入场景的离线工具，支持快速记件、工序预设、收入汇总、扣款奖金调整，以及图片和 CSV 导出。</p>
+
+      <h2>常见问题</h2>
+      <div class="box">
+        <p><strong>是否需要注册账号？</strong><br>不需要。当前版本没有登录、注册或订阅流程，打开应用即可使用。</p>
+        <p><strong>数据会上传服务器吗？</strong><br>不会。当前版本没有账号系统或云同步，记账数据默认仅保存在本机。</p>
+        <p><strong>如何修改错误记录？</strong><br>你可以在应用内编辑或删除已有记录、调整项和工序预设。</p>
+        <p><strong>为什么导出失败？</strong><br>请确认设备有可用存储空间，并检查系统分享面板或文件保存权限是否正常。</p>
+        <p><strong>如何备份数据？</strong><br>当前版本以本地使用为主。你可以主动使用图片导出或 CSV 导出功能保存记录结果。</p>
+      </div>
+
+      <h2>问题反馈</h2>
+      <p>如需反馈问题，请通过 App Store 页面中的开发者联系方式联系开发者。反馈时建议附带设备型号、iOS 版本、应用版本、问题复现步骤和截图。</p>
+
+      <h2>审核说明</h2>
+      <p>本应用无需测试账号，也不依赖后端服务。审核人员安装后可直接进入应用，测试工序预设、记件录入、扣款奖金调整、收入汇总，以及图片或 CSV 导出流程。</p>
+
+      <h2>隐私政策</h2>
+      <p>请查看 <a href="./privacy.html">计件工资-记账计算器隐私政策</a>。</p>
+    </article>
+  </main>
+</body>
+</html>

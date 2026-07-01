@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Refill Radar Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #15202b;
+      --muted: #5f6b76;
+      --line: #d9e1e8;
+      --brand: #2c7a7b;
+      --bg: #f4f7f8;
+      --panel: #ffffff;
+      --soft: #eef8f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef6f7 0%, var(--bg) 180px);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.68;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: clamp(22px, 5vw, 42px);
+      box-shadow: 0 16px 40px rgba(21, 32, 43, 0.06);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 18px;
+      background: var(--soft);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Refill Radar Support</h1>
+      <p class="meta">This page is provided for App Store support and review reference.</p>
+
+      <h2>About the app</h2>
+      <p>Refill Radar helps users keep track of medication supply, estimate when medicine will run low, log refills, and receive reminder notifications before they run out.</p>
+
+      <h2>Common questions</h2>
+      <div class="box">
+        <p><strong>Do I need to create an account?</strong><br>No. The current version does not require sign-in or registration.</p>
+        <p><strong>Is my data uploaded to a server?</strong><br>No. The current version is designed to keep medication records and reminder settings on the device.</p>
+        <p><strong>Why are reminders not appearing?</strong><br>Please confirm notification permission is enabled in iOS settings and that reminders are turned on inside the app.</p>
+        <p><strong>How do I correct supply counts or refill entries?</strong><br>Open the relevant medication record and update the stock, refill, or reminder settings directly in the app.</p>
+        <p><strong>Can the app provide medical advice?</strong><br>No. Refill Radar is only an organizational reminder tool.</p>
+      </div>
+
+      <h2>Support contact</h2>
+      <p>If you need help, please use the developer contact information listed on the App Store page. When reporting a problem, include your device model, iOS version, app version, and steps to reproduce the issue.</p>
+
+      <h2>App Review note</h2>
+      <p>The app does not require a test account and does not depend on a backend service. Reviewers can launch the app directly and test medication setup, refill planning, stock updates, and local reminder flows without signing in.</p>
+
+      <h2>Privacy policy</h2>
+      <p>Please see the <a href="./privacy.html">Refill Radar Privacy Policy</a>.</p>
+    </article>
+  </main>
+</body>
+</html>

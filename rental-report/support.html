@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental-Report Support</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f3eee6;
+        --ink: #221c18;
+        --muted: #64584f;
+        --line: rgba(60, 45, 35, 0.12);
+        --brand: #8f572a;
+        --paper: rgba(255, 252, 246, 0.92);
+        --soft: rgba(143, 87, 42, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Display", "Segoe UI", "Helvetica Neue", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at right top, rgba(224, 196, 161, 0.4), transparent 26%),
+          linear-gradient(180deg, #faf7f2 0%, var(--bg) 100%);
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 72px;
+      }
+
+      .hero,
+      .block {
+        background: var(--paper);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        box-shadow: 0 24px 80px rgba(61, 45, 31, 0.08);
+        backdrop-filter: blur(14px);
+      }
+
+      .hero {
+        padding: 28px;
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: var(--soft);
+        color: var(--brand);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        margin-top: 18px;
+        max-width: 740px;
+        font-size: clamp(34px, 6vw, 56px);
+        line-height: 1.05;
+      }
+
+      .sub {
+        margin-top: 18px;
+        max-width: 760px;
+        color: var(--muted);
+        font-size: 17px;
+        line-height: 1.9;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 0 16px;
+        border-radius: 14px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .actions .primary {
+        background: var(--brand);
+        color: #fff;
+      }
+
+      .actions .secondary {
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid var(--line);
+        color: var(--ink);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      .block {
+        padding: 24px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin-top: 14px;
+      }
+
+      .block p,
+      .block li {
+        margin-top: 12px;
+        color: var(--muted);
+        line-height: 1.85;
+        font-size: 16px;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      a {
+        color: var(--brand);
+      }
+
+      @media (max-width: 640px) {
+        .hero,
+        .block {
+          border-radius: 22px;
+        }
+
+        .hero {
+          padding: 22px;
+        }
+
+        .block {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <span class="badge">Rental-Report · Support</span>
+        <h1>Support for a local-first rental inspection tool should be straightforward.</h1>
+        <p class="sub">
+          Rental-Report helps landlords, tenants, and hosts create room-by-room inspection reports with photos, notes, signatures, and PDF export. Use this page for support links, common questions, and App Store review metadata.
+        </p>
+        <div class="actions">
+          <a class="primary" href="https://github.com/workyan/docs/issues">Submit Feedback</a>
+          <a class="secondary" href="./privacy.html">View Privacy Policy</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="block">
+          <h2>App Scope</h2>
+          <p>Platform: iPhone / iOS</p>
+          <p>Use case: move-in, move-out, and routine inspection reports</p>
+          <p>Best for: independent landlords, small property managers, Airbnb hosts, and tenants who need a clean PDF evidence trail</p>
+        </article>
+
+        <article class="block">
+          <h2>Support Links</h2>
+          <p>GitHub Issues: <a href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a></p>
+          <p>Support URL: <a href="https://workyan.github.io/docs/rental-report/support.html">https://workyan.github.io/docs/rental-report/support.html</a></p>
+          <p>Privacy Policy URL: <a href="https://workyan.github.io/docs/rental-report/privacy.html">https://workyan.github.io/docs/rental-report/privacy.html</a></p>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="block">
+          <h2>Common Questions</h2>
+          <h3>1. Does the app require an account?</h3>
+          <p>No. The current product scope is designed without account registration or a required cloud login.</p>
+          <h3>2. Where are my reports stored?</h3>
+          <p>The app is designed for local-first use, with report data kept on the device unless you choose to export or share it.</p>
+          <h3>3. How do I share a report?</h3>
+          <p>Generate a PDF export in the app and use the iOS share sheet to send it by email, message, Files, or another destination you choose.</p>
+        </article>
+
+        <article class="block">
+          <h2>Please Include</h2>
+          <ul>
+            <li>Your device model and iOS version.</li>
+            <li>The app version.</li>
+            <li>The steps needed to reproduce the issue.</li>
+            <li>Whether the issue involves photos, signatures, export, or sharing.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="block">
+          <h2>Support Topics</h2>
+          <ul>
+            <li>Inspection draft or history issues.</li>
+            <li>Photo attachment or signature capture problems.</li>
+            <li>PDF export and sharing failures.</li>
+            <li>UI wording, workflow, or feature suggestions.</li>
+          </ul>
+        </article>
+
+        <article class="block">
+          <h2>App Store Fields</h2>
+          <p>Support URL: this <code>support.html</code> page</p>
+          <p>Privacy Policy URL: this folder’s <code>privacy.html</code> page</p>
+          <p>Developer Website: you can use the support page URL or the folder root URL</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

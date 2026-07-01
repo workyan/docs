@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>菌数-菌落计数器支持</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #16211c;
+      --muted: #5d6b65;
+      --line: #d7e1db;
+      --brand: #276749;
+      --bg: linear-gradient(180deg, #f5faf7 0%, #edf4ef 100%);
+      --panel: #ffffff;
+      --soft: #f8fcf9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: clamp(22px, 5vw, 42px);
+      box-shadow: 0 20px 60px rgba(22, 33, 28, 0.06);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      background: var(--soft);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>菌数-菌落计数器支持</h1>
+      <p class="meta">本页面用于 App Store 支持链接、用户帮助和审核说明。</p>
+
+      <h2>应用说明</h2>
+      <p>菌数-菌落计数器是一款本地离线的培养皿拍照计数与 CFU 换算工具，适用于实验课、微生物培养、食品发酵和实验室记录场景。应用支持自动识别、手动修正、实验信息保存以及 PNG、CSV、PDF 结果导出。</p>
+
+      <h2>常见问题</h2>
+      <div class="box">
+        <p><strong>是否需要注册账号？</strong><br>不需要。应用当前没有账号系统，打开即可使用。</p>
+        <p><strong>数据会上传服务器吗？</strong><br>不会。培养皿图片、计数结果和实验记录默认只保存在当前设备本机。</p>
+        <p><strong>如何修正自动计数结果？</strong><br>你可以在结果页手动加点、删点，并结合缩放查看细节后完成修正。</p>
+        <p><strong>如何导出结果？</strong><br>应用支持导出标注结果图、CSV 和 PDF，并可通过系统分享面板发送到邮件、文件 App 或其他支持的目标。</p>
+        <p><strong>这是不是医学诊断工具？</strong><br>不是。它是实验辅助计数和记录工具，不替代医学诊断、临床判断或正式检测结论。</p>
+      </div>
+
+      <h2>问题反馈</h2>
+      <p>如需反馈问题，请通过 App Store 页面中的开发者联系方式联系开发者。反馈时建议附上设备型号、iOS 版本、应用版本、问题发生步骤以及相关截图，这样更方便定位问题。</p>
+
+      <h2>审核测试说明</h2>
+      <p>本应用无需测试账号、无需登录，也不依赖外部后端服务。审核人员可直接拍照或从相册导入培养皿图片，体验自动计数、手动修正、实验信息填写、CFU 换算、本地记录保存以及导出分享流程。</p>
+
+      <h2>隐私政策</h2>
+      <p>请查看 <a href="./privacy.html">菌数-菌落计数器隐私政策</a>。</p>
+    </article>
+  </main>
+</body>
+</html>

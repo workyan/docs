@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>菌数-菌落计数器隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #16211c;
+      --muted: #5d6b65;
+      --line: #d7e1db;
+      --brand: #276749;
+      --brand-soft: #edf7f1;
+      --bg: linear-gradient(180deg, #f5faf7 0%, #edf4ef 100%);
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: clamp(22px, 5vw, 42px);
+      box-shadow: 0 20px 60px rgba(22, 33, 28, 0.06);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .notice {
+      border-left: 4px solid var(--brand);
+      background: var(--brand-soft);
+      padding: 14px 16px;
+      margin: 24px 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>菌数-菌落计数器隐私政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 1 日</p>
+
+      <p>菌数-菌落计数器是一款面向实验课、微生物培养、食品发酵和实验室记录场景的本地离线工具。我们尽量减少数据处理范围，本政策说明应用会处理哪些数据、这些数据保存在哪里，以及你可以如何管理它们。</p>
+
+      <div class="notice">
+        <p>简要说明：本应用无需注册账号，不接入广告 SDK，不进行跨应用追踪。培养皿图片、计数结果和实验记录默认仅保存在你的设备本机。</p>
+      </div>
+
+      <h2>我们处理的数据</h2>
+      <p>为了提供菌落计数、CFU 换算和实验记录功能，应用可能会处理以下由你主动导入、拍摄、填写或生成的数据：</p>
+      <ul>
+        <li>图片数据：你拍摄或从相册导入的培养皿图片。</li>
+        <li>计数结果：自动识别结果、手动加点删点修正后的菌落数量和标注信息。</li>
+        <li>实验记录：样本编号、实验日期、培养基备注、稀释倍数、单位体积、结果备注等。</li>
+        <li>导出文件：你主动导出的 PNG、CSV 或 PDF 结果文件。</li>
+        <li>本机设置：用于恢复你的最近记录和本地使用状态。</li>
+      </ul>
+
+      <h2>数据保存位置</h2>
+      <p>上述数据默认保存在当前设备本机，用于你后续查看、编辑、导出和继续处理实验记录。当前版本不提供账号系统，不依赖自有云端服务器，也不会把你的培养皿图片、样本编号、计数结果或实验备注上传到开发者服务器。</p>
+
+      <h2>设备权限说明</h2>
+      <ul>
+        <li>相机权限：用于拍摄培养皿图片并进行本地计数。</li>
+        <li>相册权限：用于导入实验图片，以及保存或分享导出的结果文件。</li>
+      </ul>
+      <p>除上述用途外，应用不需要定位、通讯录、麦克风、蓝牙或跟踪权限。</p>
+
+      <h2>我们不会做的事情</h2>
+      <ul>
+        <li>不接入广告 SDK。</li>
+        <li>不进行个性化广告投放。</li>
+        <li>不进行跨应用追踪。</li>
+        <li>不向第三方出售、出租或共享你的实验数据。</li>
+        <li>不要求你提供账号、密码或手机号登录。</li>
+      </ul>
+
+      <h2>导出与分享</h2>
+      <p>当你使用 PNG、CSV、PDF 导出或系统分享功能时，相关文件会按你的操作保存到系统位置或交由系统分享面板处理。请只在你信任的设备和接收方环境中使用这些功能，因为导出后的文件管理和传播由你自行控制。</p>
+
+      <h2>更正与删除数据</h2>
+      <p>你可以在应用内修改实验记录、重新计数或删除本地记录。若你删除应用，保存在应用沙盒内的本地数据通常也会一并移除；若你已导出文件到系统相册或文件 App，则需在对应位置单独删除。</p>
+
+      <h2>儿童隐私</h2>
+      <p>本应用是实验记录与辅助计数工具，不面向儿童社交或内容平台场景，亦不会主动收集儿童个人信息。</p>
+
+      <h2>免责声明</h2>
+      <p>本应用提供的是实验辅助计数与记录功能，不构成医学诊断、临床判断或监管结论。请结合实际实验规范和专业判断使用结果。</p>
+
+      <h2>政策更新</h2>
+      <p>如果未来新增账号、云同步、第三方服务或其他数据处理方式，我们会在新版本中同步更新本政策内容。</p>
+
+      <h2>联系我们</h2>
+      <p>如果你对隐私政策有疑问，或需要反馈隐私相关问题，可通过 App Store 页面中的开发者联系方式联系开发者，也可以访问 <a href="./support.html">支持页面</a> 查看说明。</p>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DwellFix Support</title>
+    <style>
+      :root {
+        --bg: #f3eee6;
+        --card: rgba(255, 250, 243, 0.95);
+        --text: #2b241d;
+        --muted: #685c52;
+        --accent: #c96b3b;
+        --line: #e4d7c9;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at top left, rgba(240, 187, 145, 0.22), transparent 22%),
+          linear-gradient(180deg, #fbf7f0 0%, var(--bg) 100%);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 40px 20px 72px;
+      }
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 20px 48px rgba(74, 51, 33, 0.08);
+      }
+      h1, h2 { margin: 0 0 14px; }
+      h1 { font-size: 36px; }
+      h2 { margin-top: 28px; font-size: 22px; }
+      p, li {
+        color: var(--muted);
+        line-height: 1.8;
+      }
+      ul { padding-left: 20px; }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+      a.button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 14px;
+        font-weight: 700;
+      }
+      a.primary { background: var(--accent); color: #fff; }
+      a.secondary { color: var(--text); border: 1px solid var(--line); background: #fff; }
+      a.inline { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="panel">
+        <h1>DwellFix Support</h1>
+        <p>
+          DwellFix helps homeowners keep up with recurring home maintenance tasks.
+          If something is not working as expected, use the links below to get support.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="https://github.com/workyan/docs/issues">Open a support request</a>
+          <a class="button secondary" href="./privacy.html">View privacy policy</a>
+        </div>
+
+        <h2>Common Questions</h2>
+        <ul>
+          <li>Missing tasks or incorrect schedules: review your home profile and task intervals, then update the task settings.</li>
+          <li>Completion history looks wrong: check the last completed date on the task detail screen and confirm the task was marked done.</li>
+          <li>Custom task problems: confirm the title, interval, and due date were saved before leaving the edit screen.</li>
+          <li>Unexpected app behavior: force quit the app and reopen it, then try the same steps again.</li>
+        </ul>
+
+        <h2>Support Covers</h2>
+        <ul>
+          <li>App launch or stability problems</li>
+          <li>Checklist, scheduling, and completion-log issues</li>
+          <li>Questions about task setup or expected app behavior</li>
+          <li>Privacy-related questions</li>
+        </ul>
+
+        <h2>Include These Details</h2>
+        <ul>
+          <li>Device model and iOS version</li>
+          <li>App version</li>
+          <li>Steps to reproduce the issue</li>
+          <li>Screenshots if the problem is visible on screen</li>
+        </ul>
+
+        <h2>Links</h2>
+        <p>
+          Support issues: <a class="inline" href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a><br />
+          GitHub profile: <a class="inline" href="https://github.com/workyan">https://github.com/workyan</a>
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

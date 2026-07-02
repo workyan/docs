@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ParkGuide-Offline Support</title>
+  <meta name="description" content="Support page for ParkGuide-Offline.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1b2b24;
+      --muted: #5f6f67;
+      --line: #d6e2db;
+      --brand: #1d6b52;
+      --brand-2: #c07b2d;
+      --bg: #f6f8f3;
+      --panel: rgba(255, 255, 255, 0.95);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(192, 123, 45, 0.14), transparent 24%),
+        radial-gradient(circle at right center, rgba(29, 107, 82, 0.10), transparent 22%),
+        linear-gradient(180deg, #fbfcfa 0%, var(--bg) 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 32px;
+      box-shadow: 0 24px 64px rgba(27, 43, 36, 0.08);
+    }
+
+    h1, h2 {
+      margin: 0 0 14px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 7vw, 48px);
+      line-height: 1.08;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    ul { padding-left: 20px; }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0 10px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .primary {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .secondary {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .accent {
+      color: var(--brand-2);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>ParkGuide-Offline Support</h1>
+      <p>ParkGuide-Offline is a paid iPhone app focused on offline-ready park guides, simple trip prep, and quick access to practical visitor information when you do not have a reliable connection.</p>
+
+      <div class="actions">
+        <a class="button primary" href="https://github.com/workyan/docs/issues">Open a support request</a>
+        <a class="button secondary" href="./privacy.html">View privacy policy</a>
+      </div>
+
+      <h2>Common Support Topics</h2>
+      <ul>
+        <li>Offline park pack download or storage issues.</li>
+        <li>Park content not appearing after download.</li>
+        <li>Favorites, saved parks, or checklist items not behaving as expected.</li>
+        <li>Suggestions for new parks, better offline details, or trip-planning improvements.</li>
+      </ul>
+
+      <h2>Before You Contact Support</h2>
+      <ul>
+        <li>Close and reopen the app, then retry the same action.</li>
+        <li>Check whether the issue happens on one park pack or all park packs.</li>
+        <li>Confirm available device storage if a download appears incomplete.</li>
+      </ul>
+
+      <h2>Include These Details</h2>
+      <ul>
+        <li>Device model and iOS version.</li>
+        <li>App version.</li>
+        <li>The park involved, if the issue is park-specific.</li>
+        <li>What you expected to happen and what happened instead.</li>
+        <li>Screenshots if the problem is visible on screen.</li>
+      </ul>
+
+      <h2>Response Target</h2>
+      <p>Support requests are typically reviewed within <span class="accent">3 business days</span>.</p>
+
+      <h2>Links</h2>
+      <p>Support issues: <a href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a><br>Privacy policy: <a href="./privacy.html">./privacy.html</a></p>
+
+      <h2>Disclaimer</h2>
+      <p>ParkGuide-Offline is an independent guide utility and is not affiliated with or endorsed by the U.S. National Park Service.</p>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pickleball-Score Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18211f;
+      --muted: #5c6865;
+      --line: #d7e3de;
+      --brand: #147a66;
+      --brand-2: #f0a33b;
+      --bg: #f6fbf8;
+      --panel: rgba(255, 255, 255, 0.95);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(240, 163, 59, 0.16), transparent 24%),
+        linear-gradient(180deg, #fbfefc 0%, var(--bg) 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 32px;
+      box-shadow: 0 20px 56px rgba(24, 33, 31, 0.08);
+    }
+
+    h1, h2 {
+      margin: 0 0 14px;
+    }
+
+    h1 { font-size: 38px; }
+    h2 {
+      margin-top: 28px;
+      font-size: 22px;
+    }
+
+    p, li {
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    ul { padding-left: 20px; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0 10px;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+    }
+
+    .primary {
+      background: var(--brand);
+      color: #fff;
+    }
+
+    .secondary {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .accent {
+      color: var(--brand-2);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>Pickleball-Score Support</h1>
+      <p>Pickleball-Score is an iPhone-first scorekeeping utility focused on keeping pickleball matches moving with less friction. If the app is not working as expected, use the support channel below.</p>
+
+      <div class="actions">
+        <a class="button primary" href="https://github.com/workyan/docs/issues">Open a support request</a>
+        <a class="button secondary" href="./privacy.html">View privacy policy</a>
+      </div>
+
+      <h2>Typical Support Topics</h2>
+      <ul>
+        <li>Scoring display confusion or unexpected score changes.</li>
+        <li>Restoring defaults or clearing local match history.</li>
+        <li>Bug reports related to match setup, serve flow, or live scoring.</li>
+        <li>Feature requests for doubles, singles, or scorekeeping shortcuts.</li>
+      </ul>
+
+      <h2>Before You Report a Bug</h2>
+      <ul>
+        <li>Close and reopen the app, then retry the same flow.</li>
+        <li>Confirm the exact steps that led to the issue.</li>
+        <li>Check whether the issue happens every time or only in one match setup.</li>
+      </ul>
+
+      <h2>Include These Details</h2>
+      <ul>
+        <li>Device model and iOS version.</li>
+        <li>App version.</li>
+        <li>What you expected to happen.</li>
+        <li>What actually happened.</li>
+        <li>Screenshots if the problem is visible on screen.</li>
+      </ul>
+
+      <h2>Response Target</h2>
+      <p>Support requests are typically reviewed within <span class="accent">3 business days</span>.</p>
+
+      <h2>Links</h2>
+      <p>Support issues: <a href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a><br>App directory: <a href="./index.html">Pickleball-Score pages</a></p>
+    </article>
+  </main>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KidsDose-Tracker Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #17202a;
+      --muted: #5d6d7e;
+      --line: #d7e3ef;
+      --brand: #1f7aa8;
+      --bg: #f4f9fc;
+      --panel: #ffffff;
+      --soft: #edf7fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(880px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: clamp(20px, 5vw, 40px);
+    }
+
+    h1,
+    h2 {
+      line-height: 1.24;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(30px, 6vw, 44px);
+    }
+
+    h2 {
+      margin: 30px 0 10px;
+      font-size: 22px;
+    }
+
+    a {
+      color: var(--brand);
+      font-weight: 700;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .box {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: var(--soft);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>KidsDose-Tracker Support</h1>
+      <p class="meta">This page is intended for the App Store support link and reviewer reference.</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:support@kidsdose-tracker.app">support@kidsdose-tracker.app</a></p>
+      <p>When reporting an issue, include your app version, iPhone model, iOS version, and the steps that led to the problem.</p>
+
+      <h2>About the app</h2>
+      <p>KidsDose-Tracker helps parents and caregivers keep a clear medicine record for each child. You can log medicine name, amount, time, and reminders, then review recent history and share a care summary when handing off to another caregiver.</p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="box">
+        <p><strong>Do I need to create an account?</strong><br>No. The current version has no sign-in, registration, or subscription flow.</p>
+        <p><strong>Is my data uploaded to a server?</strong><br>No. In the current version, child profiles, presets, and logs are stored locally on your device.</p>
+        <p><strong>How do reminders work?</strong><br>Reminder timing is based on the interval you enter for each medicine preset or manual log. Always follow the medicine label and your clinician's instructions.</p>
+        <p><strong>Does the app tell me safe dosage amounts?</strong><br>No. KidsDose-Tracker is a record-keeping tool only and does not provide medical advice, diagnosis, treatment, or dosage recommendations.</p>
+      </div>
+
+      <h2>App Review Notes</h2>
+      <p>The app does not require a test account and does not depend on a backend service. Reviewers can open the app and directly test child profiles, medicine presets, logging flows, reminder setup, history review, and summary sharing.</p>
+
+      <h2>Privacy policy</h2>
+      <p>Read the <a href="./privacy.html">KidsDose-Tracker Privacy Policy</a>.</p>
+    </article>
+  </main>
+</body>
+</html>

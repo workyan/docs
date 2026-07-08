@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airport-METAR Support</title>
+    <style>
+      :root {
+        --bg: #eef4fb;
+        --card: rgba(255, 255, 255, 0.95);
+        --text: #17324d;
+        --muted: #49637d;
+        --accent: #1f6fb2;
+        --line: #d8e4f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at top left, rgba(84, 160, 220, 0.18), transparent 22%),
+          linear-gradient(180deg, #f7fbff 0%, var(--bg) 100%);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 40px 20px 72px;
+      }
+
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 20px 48px rgba(18, 46, 77, 0.08);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 14px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      a.button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 14px;
+        font-weight: 700;
+      }
+
+      a.primary {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      a.secondary {
+        color: var(--text);
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      a.inline {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="panel">
+        <h1>Airport-METAR Support</h1>
+        <p>
+          Airport-METAR helps users check METAR, TAF, decoded weather, and flight category
+          for airports quickly. If the app is not working as expected, use the links below
+          to get support.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="https://github.com/workyan/docs/issues">Open a support request</a>
+          <a class="button secondary" href="./privacy.html">View privacy policy</a>
+        </div>
+
+        <h2>Common Questions</h2>
+        <ul>
+          <li>Airport not found: verify the ICAO code or try a broader airport name search.</li>
+          <li>Weather looks outdated: reopen the app and check whether the source feed has published a newer report.</li>
+          <li>Widget not updating: confirm the widget is tied to a saved favorite airport and reload the widget timeline.</li>
+          <li>Decoded weather or category looks unexpected: compare the raw METAR text and confirm the report time.</li>
+        </ul>
+
+        <h2>Support Covers</h2>
+        <ul>
+          <li>App launch or stability problems</li>
+          <li>Airport search, favorites, and widget issues</li>
+          <li>Questions about METAR, TAF, and displayed weather status in the app</li>
+          <li>Privacy-related questions</li>
+        </ul>
+
+        <h2>Include These Details</h2>
+        <ul>
+          <li>Device model and iOS version</li>
+          <li>App version</li>
+          <li>Airport code involved, if relevant</li>
+          <li>Steps to reproduce the issue</li>
+          <li>Screenshots if the problem is visible on screen</li>
+        </ul>
+
+        <h2>Data Attribution and Disclaimer</h2>
+        <p>
+          Weather data is sourced from public NOAA/NWS aviation weather interfaces. Airport-METAR
+          is an independent app and is not affiliated with or endorsed by the FAA, NOAA, or the
+          National Weather Service.
+        </p>
+
+        <h2>Links</h2>
+        <p>
+          Support issues: <a class="inline" href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a><br />
+          GitHub profile: <a class="inline" href="https://github.com/workyan">https://github.com/workyan</a>
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

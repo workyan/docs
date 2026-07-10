@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeployPay-US Support</title>
+    <style>
+      :root {
+        --bg: #eef3f8;
+        --card: rgba(255, 255, 255, 0.95);
+        --text: #13293d;
+        --muted: #4f6477;
+        --accent: #1c6aa3;
+        --line: #d7e2ec;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at top left, rgba(28, 106, 163, 0.16), transparent 22%),
+          linear-gradient(180deg, #f8fbfe 0%, var(--bg) 100%);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 40px 20px 72px;
+      }
+
+      .panel {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 20px 48px rgba(19, 41, 61, 0.08);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 14px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+      }
+
+      a.button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 18px;
+        border-radius: 14px;
+        font-weight: 700;
+      }
+
+      a.primary {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      a.secondary {
+        color: var(--text);
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      a.inline {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="panel">
+        <h1>DeployPay-US Support</h1>
+        <p>
+          DeployPay-US helps users estimate military pay, deployment pay, BAH, BAS, and
+          drill pay quickly. If the app is not working as expected, use the links below
+          to send a support request.
+        </p>
+
+        <div class="actions">
+          <a class="button primary" href="https://github.com/workyan/docs/issues">Open a support request</a>
+          <a class="button secondary" href="./privacy.html">View privacy policy</a>
+        </div>
+
+        <h2>Common Questions</h2>
+        <ul>
+          <li>Numbers look different from official pay: confirm the app year, assumptions, and current official tables.</li>
+          <li>BAH estimate looks off: verify the selected ZIP code or location and check whether official rates changed.</li>
+          <li>Deployment pay seems incomplete: review combat zone, family separation, and other scenario inputs.</li>
+          <li>Saved scenarios missing: confirm whether app data was cleared or the device was restored.</li>
+        </ul>
+
+        <h2>Support Covers</h2>
+        <ul>
+          <li>App launch or stability problems</li>
+          <li>Calculator input or output issues</li>
+          <li>Questions about pay assumptions shown in the app</li>
+          <li>Privacy-related questions</li>
+        </ul>
+
+        <h2>Include These Details</h2>
+        <ul>
+          <li>Device model and iOS version</li>
+          <li>App version</li>
+          <li>Calculator type involved, such as monthly pay or deployment pay</li>
+          <li>The inputs you used and the result you expected</li>
+          <li>Screenshots if the problem is visible on screen</li>
+        </ul>
+
+        <h2>Disclaimer</h2>
+        <p>
+          DeployPay-US provides estimates for planning purposes only. It is an independent
+          app and is not affiliated with or endorsed by the U.S. Department of Defense or
+          any military branch.
+        </p>
+
+        <h2>Links</h2>
+        <p>
+          Support issues: <a class="inline" href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a><br />
+          GitHub profile: <a class="inline" href="https://github.com/workyan">https://github.com/workyan</a>
+        </p>
+      </article>
+    </main>
+  </body>
+</html>

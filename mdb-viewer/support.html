@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - MDB-Viewer</title>
+  <style>
+    :root { color-scheme: light; --text: #172033; --muted: #5c667a; --line: #d9dee8; --bg: #f6f8fb; --panel: #ffffff; --accent: #1f6feb; --ok: #176f3d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+    main { max-width: 860px; margin: 0 auto; padding: 48px 20px 64px; }
+    article { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 32px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.15; }
+    h2 { margin-top: 30px; font-size: 20px; }
+    p, li { font-size: 16px; }
+    .muted { color: var(--muted); }
+    .status { display: inline-block; margin: 18px 0 4px; color: var(--ok); font-weight: 600; }
+    a { color: var(--accent); }
+    nav { margin-bottom: 20px; }
+    ul { padding-left: 22px; }
+    code { background: #eef2f7; border-radius: 4px; padding: 2px 5px; }
+    @media (max-width: 560px) { article { padding: 22px; } h1 { font-size: 28px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="privacy.html">Privacy Policy</a></nav>
+    <article>
+      <h1>MDB-Viewer Support</h1>
+      <p class="muted">Support information for MDB-Viewer on iPhone.</p>
+      <p class="status">Current support scope: MDB and ACCDB table viewing</p>
+
+      <h2>What MDB-Viewer Does</h2>
+      <p>MDB-Viewer helps you open common Microsoft Access database files on iPhone, browse available tables, inspect row data, and export loaded rows to CSV.</p>
+
+      <h2>Supported Workflows</h2>
+      <ul>
+        <li>Open <code>.mdb</code> files from the Files app or iOS document picker.</li>
+        <li>Open common <code>.accdb</code> table data where supported by the app parser.</li>
+        <li>Browse table names and view rows in a mobile-friendly layout.</li>
+        <li>Export loaded rows to CSV for follow-up work in other tools.</li>
+      </ul>
+
+      <h2>Known Limitations</h2>
+      <ul>
+        <li>MDB-Viewer is a viewer, not a database editor.</li>
+        <li>Encrypted databases may not open.</li>
+        <li>Forms, reports, queries, macros, relationships, and application logic are not displayed as desktop Access objects.</li>
+        <li>Some complex fields, damaged files, very large files, or uncommon database versions may be unsupported.</li>
+      </ul>
+
+      <h2>Troubleshooting</h2>
+      <ul>
+        <li>Confirm the file extension is <code>.mdb</code> or <code>.accdb</code>.</li>
+        <li>Try opening the file from the iOS Files app instead of another app's temporary preview.</li>
+        <li>If a file does not open, verify it is not encrypted or damaged by opening it in your primary desktop database tool.</li>
+        <li>For critical work, always verify exported CSV data against the original database.</li>
+      </ul>
+
+      <h2>Contact Support</h2>
+      <p>For support requests, bug reports, or privacy questions, open an issue in the documentation repository:</p>
+      <p><a href="https://github.com/workyan/docs/issues">https://github.com/workyan/docs/issues</a></p>
+      <p>Please include your iOS version, app version, file type, and a short description of what happened. Do not attach private or sensitive database files to public issues.</p>
+
+      <h2>Privacy</h2>
+      <p>MDB-Viewer does not collect personal information or upload your database files. Read the <a href="privacy.html">Privacy Policy</a> for details.</p>
+    </article>
+  </main>
+</body>
+</html>

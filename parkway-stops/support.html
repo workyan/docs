@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support for Parkway Stops.">
+  <title>Support — Parkway Stops</title>
+  <style>
+    :root { --pine:#173c35; --river:#2c6e63; --sun:#d97941; --paper:#f6f3eb; --ink:#182521; --muted:#5a6862; --line:#d9d8cf; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--paper); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    .top { padding:30px max(24px,calc((100% - 1080px)/2)) 61px; color:#fff; background:linear-gradient(120deg,rgba(12,40,34,.9),rgba(28,84,74,.73)),linear-gradient(145deg,#234e45,#0c2d28); }
+    nav { display:flex; justify-content:space-between; gap:18px; align-items:center; font-size:14px; } nav a { color:#fff; text-decoration:none; opacity:.88; } nav a:hover { opacity:1; } .brand { font-weight:800; letter-spacing:.05em; text-transform:uppercase; }
+    header { max-width:720px; padding-top:72px; animation:rise .6s ease-out both; } .eyebrow { margin:0 0 13px; color:#f7c29d; font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+    h1,h2 { font-family:ui-serif,Georgia,Cambria,"Times New Roman",serif; font-weight:500; letter-spacing:-.035em; } h1 { margin:0; font-size:clamp(43px,7vw,74px); line-height:.96; } .intro { margin:20px 0 0; max-width:620px; color:rgba(255,255,255,.84); font-size:17px; line-height:1.65; }
+    main { max-width:850px; margin:0 auto; padding:54px 24px 80px; } .actions { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:48px; } .button { display:inline-block; padding:13px 18px; border:1px solid var(--pine); border-radius:2px; color:var(--pine); font-weight:750; text-decoration:none; transition:transform .18s ease,background .18s ease,color .18s ease; } .button:hover { transform:translateY(-2px); } .button.primary { border-color:var(--sun); background:var(--sun); color:#fff; }
+    section { padding:29px 0; border-top:1px solid var(--line); } h2 { margin:0 0 12px; color:var(--pine); font-size:clamp(25px,3vw,31px); line-height:1.15; } p,li { color:var(--muted); font-size:16px; line-height:1.75; } p { margin:0; } ul { margin:13px 0 0; padding-left:21px; } li+li { margin-top:5px; } a { color:var(--river); font-weight:700; text-underline-offset:3px; }
+    .tip { padding:21px 24px; border-left:3px solid var(--sun); background:#fffaf5; color:#51483f; line-height:1.65; } footer { margin-top:45px; color:var(--muted); font-size:13px; }
+    @keyframes rise { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:none; } } @media (max-width:580px) { .top { padding-bottom:49px; } header { padding-top:58px; } main { padding-top:38px; } }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <nav><a class="brand" href="./support.html">Parkway Stops</a><a href="./privacy.html">Privacy Policy →</a></nav>
+    <header><p class="eyebrow">We're here to help</p><h1>Support for the road ahead.</h1><p class="intro">Get help with the offline Blue Ridge Parkway guide, saved stops, or a suggestion for making the next drive better.</p></header>
+  </div>
+  <main>
+    <div class="actions"><a class="button primary" href="https://github.com/workyan/docs/issues">Open a support request</a><a class="button" href="./privacy.html">Read privacy policy</a></div>
+    <section><h2>What Parkway Stops does</h2><p>Parkway Stops is an offline-ready iPhone guide to worthwhile stops along the Blue Ridge Parkway. Browse by milepost, category, facilities, and travel direction—even where your connection is limited.</p></section>
+    <section><h2>Common topics</h2><ul><li>Guide content, search, filters, or stop details.</li><li>Favorites that do not appear as expected.</li><li>Opening a destination in Apple Maps.</li><li>Suggestions for a stop, correction, or missing practical detail.</li></ul></section>
+    <section><h2>Before you write</h2><ul><li>Close and reopen the app, then try the action again.</li><li>Check the App Store for the latest version.</li><li>For a content issue, note the stop name and milepost if available.</li></ul></section>
+    <section><h2>Include these details</h2><ul><li>Your iPhone model and iOS version.</li><li>The Parkway Stops app version.</li><li>What you expected to happen and what happened instead.</li><li>A screenshot, if the issue is visible on screen.</li></ul></section>
+    <section><h2>Contact support</h2><p>Please <a href="https://github.com/workyan/docs/issues">open an issue in our support tracker</a>. We aim to review requests within three business days.</p></section>
+    <section class="tip">Road, trail, weather, and facility conditions can change quickly. Confirm important details with official sources before you travel.</section>
+    <footer>© 2026 Parkway Stops · <a href="./privacy.html">Privacy Policy</a></footer>
+  </main>
+</body>
+</html>

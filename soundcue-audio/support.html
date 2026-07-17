@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Support for SoundCue: Audio Bookmarks." />
+    <title>SoundCue Support</title>
+    <style>
+      :root { --ink:#17172d; --muted:#66657a; --purple:#6542e9; --line:#e8e5f2; --paper:#fff; --ground:#faf9fd; }
+      * { box-sizing:border-box; }
+      body { margin:0; color:var(--ink); background:radial-gradient(circle at 8% 0, #eae4ff 0, transparent 30%),var(--ground); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      main { width:min(860px,calc(100% - 40px)); margin:0 auto; padding:56px 0 80px; }
+      article { padding:clamp(24px,5vw,48px); background:var(--paper); border:1px solid var(--line); border-radius:24px; box-shadow:0 18px 50px #31206510; }
+      .brand { color:var(--purple); font-weight:750; letter-spacing:-.02em; }
+      h1,h2 { line-height:1.2; letter-spacing:-.035em; }
+      h1 { margin:10px 0 14px; font-size:clamp(2rem,5vw,3rem); }
+      h2 { margin:2.25rem 0 .65rem; font-size:1.25rem; }
+      p,li { color:var(--muted); }
+      ul { padding-left:1.3rem; }
+      a { color:var(--purple); font-weight:650; }
+      .actions { display:flex; flex-wrap:wrap; gap:12px; margin:24px 0 8px; }
+      .button { display:inline-block; padding:11px 16px; border:1px solid var(--line); border-radius:12px; text-decoration:none; }
+      .button.primary { border-color:var(--purple); color:#fff; background:var(--purple); }
+      footer { margin-top:32px; color:var(--muted); font-size:.9rem; text-align:center; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="brand">SoundCue: Audio Bookmarks</div>
+        <h1>Support</h1>
+        <p>SoundCue helps you mark important moments in long-form audio, add a note, and return to that passage in one tap.</p>
+        <div class="actions">
+          <a class="button primary" href="https://github.com/workyan/docs/issues/new?title=SoundCue%20support%20request">Open a support request</a>
+          <a class="button" href="./privacy.html">View privacy policy</a>
+        </div>
+
+        <h2>Common questions</h2>
+        <ul>
+          <li><strong>My audio does not appear.</strong> Reopen the file from the Files app or share it to SoundCue, then confirm that the file is still available on your device.</li>
+          <li><strong>I cannot find a marker.</strong> Open the audio item and use search or tags to locate the saved note or timestamp.</li>
+          <li><strong>I am changing devices.</strong> Export your markers before deleting the app or moving to another device.</li>
+          <li><strong>Playback stops unexpectedly.</strong> Check that the original audio file has not been moved, renamed, or removed from Files.</li>
+        </ul>
+
+        <h2>When contacting support</h2>
+        <p>Please include your device model, iOS version, SoundCue version, a short description of what happened, and steps to reproduce the issue. Screenshots are helpful when the issue is visible on screen. Do not include private audio files unless specifically requested.</p>
+
+        <h2>Privacy questions</h2>
+        <p>For questions about how SoundCue handles data, please review the <a href="./privacy.html">Privacy Policy</a> or submit a support request.</p>
+      </article>
+      <footer>© 2026 SoundCue</footer>
+    </main>
+  </body>
+</html>

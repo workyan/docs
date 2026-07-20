@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support and frequently asked questions for Aqua-Minder: Aquarium Log.">
+  <title>Aqua-Minder Support</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #102a2e;
+      --muted: #607579;
+      --line: #d7e6e7;
+      --brand: #087e8b;
+      --brand-dark: #075d65;
+      --wash: #eaf8f8;
+      --panel: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 14% 4%, rgba(58, 190, 198, .18), transparent 28rem),
+        linear-gradient(180deg, #f3fbfb 0, #f7fafa 20rem);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    article {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 20px 55px rgba(16, 42, 46, .08);
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--brand-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 { line-height: 1.25; }
+    h1 { margin: 0 0 8px; font-size: clamp(32px, 7vw, 48px); letter-spacing: -.03em; }
+    h2 { margin: 32px 0 10px; font-size: 22px; }
+    p, li { font-size: 16px; }
+    a { color: var(--brand-dark); font-weight: 700; }
+    .meta { margin: 0 0 28px; color: var(--muted); }
+
+    .intro {
+      margin: 24px 0;
+      padding: 16px 18px;
+      background: var(--wash);
+      border-left: 4px solid var(--brand);
+      border-radius: 4px 12px 12px 4px;
+    }
+
+    .intro p { margin: 0; }
+
+    details {
+      margin: 12px 0;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    summary {
+      padding: 15px 18px;
+      cursor: pointer;
+      color: var(--ink);
+      font-weight: 750;
+    }
+
+    details p { margin: 0; padding: 0 18px 18px; color: #385156; }
+    .contact { padding: 18px; border-radius: 12px; background: var(--wash); }
+    .contact p { margin: 0; }
+    footer { margin-top: 34px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <p class="eyebrow">Aqua-Minder · Aquarium Log</p>
+      <h1>Support</h1>
+      <p class="meta">Help with water tests, care history, reminders, and exports.</p>
+
+      <div class="intro">
+        <p>Aqua-Minder helps freshwater aquarium keepers record water parameters, maintenance, feeding, and treatment history in one simple timeline.</p>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <details open>
+        <summary>Do I need an account?</summary>
+        <p>No. Aqua-Minder works without registration or sign-in. Your records are stored locally on your device.</p>
+      </details>
+
+      <details>
+        <summary>How do I log a water test or care activity?</summary>
+        <p>Open the Log tab, choose Water test, Maintenance, Feeding, or Treatment, enter the details, and save. The new record will appear in your tank timeline.</p>
+      </details>
+
+      <details>
+        <summary>Why is a trend not showing?</summary>
+        <p>A trend needs at least two saved water tests containing a reading for the selected parameter. Add another water test, then return to Trends.</p>
+      </details>
+
+      <details>
+        <summary>How do reminders work?</summary>
+        <p>Care tasks appear in the Reminders screen. Complete a matching water test or maintenance record to advance its due date. If notification reminders are available, also confirm that iOS notification permission is enabled.</p>
+      </details>
+
+      <details>
+        <summary>How do I export my aquarium history?</summary>
+        <p>Open More and choose Export history. Aqua-Minder prepares a CSV file and opens the iOS share sheet so you can save or send it to a destination you choose.</p>
+      </details>
+
+      <details>
+        <summary>How do I delete my data?</summary>
+        <p>Open More and use Delete tank. This removes the tank, its records, and reminders from the device. Uninstalling the app also removes locally stored app data.</p>
+      </details>
+
+      <details>
+        <summary>Does Aqua-Minder provide treatment advice?</summary>
+        <p>No. Treatment entries are records only. Aqua-Minder does not diagnose fish disease or recommend medication. Follow product labels and consult a qualified aquatic veterinarian when needed.</p>
+      </details>
+
+      <h2>Contact support</h2>
+      <div class="contact">
+        <p>Use the developer contact information listed on Aqua-Minder's App Store page. To help us understand a problem, include your device model, iOS version, app version, what you expected, and the steps that reproduce the issue. Please do not include sensitive personal information.</p>
+      </div>
+
+      <h2>App Review information</h2>
+      <p>Aqua-Minder does not require a test account or a backend service. Reviewers can launch the app, create a tank, add sample records, inspect trends, manage care tasks, and test CSV export without signing in.</p>
+
+      <h2>Privacy</h2>
+      <p>Read the <a href="./privacy.html">Aqua-Minder Privacy Policy</a> for details about local storage and data handling.</p>
+
+      <footer>Aqua-Minder · Clear records for healthier routines.</footer>
+    </article>
+  </main>
+</body>
+</html>

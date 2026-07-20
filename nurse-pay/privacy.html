@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073f3a">
+  <meta name="description" content="Privacy Policy for Nurse-Pay, the private offline pay estimator for travel and contract nurses.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23073f3a'/%3E%3Cpath d='M19 45V19h6l14 18V19h6v26h-6L25 27v18z' fill='%239de0cf'/%3E%3C/svg%3E">
+  <title>Privacy Policy — Nurse-Pay</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #12312e;
+      --muted: #59716e;
+      --paper: #f5f3ec;
+      --paper-deep: #ebe8de;
+      --brand: #0b655b;
+      --brand-dark: #073f3a;
+      --accent: #e07352;
+      --line: rgba(18, 49, 46, .16);
+      --content: 720px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--brand); text-underline-offset: 4px; }
+
+    a:hover { color: var(--brand-dark); }
+
+    .progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 10;
+      width: 0;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 62svh;
+      overflow: hidden;
+      color: #f9f7f0;
+      background:
+        radial-gradient(circle at 82% 18%, rgba(105, 204, 180, .22), transparent 28rem),
+        linear-gradient(145deg, #073f3a, #0b5c54 62%, #084942);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -8rem;
+      bottom: -13rem;
+      width: 36rem;
+      height: 36rem;
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5rem rgba(255, 255, 255, .025), 0 0 0 10rem rgba(255, 255, 255, .018);
+    }
+
+    .nav, .hero-inner, main, footer {
+      width: min(calc(100% - 40px), 1100px);
+      margin-inline: auto;
+    }
+
+    .nav {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 78px;
+      border-bottom: 1px solid rgba(255, 255, 255, .14);
+    }
+
+    .brand {
+      display: inline-flex;
+      gap: 11px;
+      align-items: center;
+      color: inherit;
+      font-size: 16px;
+      font-weight: 760;
+      letter-spacing: .01em;
+      text-decoration: none;
+    }
+
+    .mark {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 50%;
+      color: #9de0cf;
+      font: 700 19px/1 Georgia, serif;
+    }
+
+    .nav-link {
+      color: rgba(255, 255, 255, .78);
+      font-size: 14px;
+      font-weight: 650;
+      text-decoration: none;
+      transition: color .2s ease, transform .2s ease;
+    }
+
+    .nav-link:hover { color: #fff; transform: translateY(-1px); }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      min-height: calc(62svh - 78px);
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px 0 72px;
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: #9de0cf;
+      font-size: 12px;
+      font-weight: 760;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(46px, 8vw, 92px);
+      font-weight: 500;
+      letter-spacing: -.045em;
+      line-height: .98;
+    }
+
+    .lede {
+      max-width: 610px;
+      margin: 26px 0 0;
+      color: rgba(255, 255, 255, .76);
+      font-size: clamp(17px, 2vw, 20px);
+    }
+
+    .hero .eyebrow, .hero h1, .hero .lede {
+      animation: rise .7s both cubic-bezier(.22, .8, .28, 1);
+    }
+
+    .hero h1 { animation-delay: .08s; }
+    .hero .lede { animation-delay: .16s; }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(180px, 250px) minmax(0, var(--content));
+      gap: clamp(42px, 8vw, 110px);
+      padding-block: clamp(68px, 10vw, 124px);
+    }
+
+    aside { align-self: start; position: sticky; top: 34px; }
+
+    .meta-label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .meta-value { margin: 0 0 28px; font-size: 14px; font-weight: 650; }
+
+    .summary {
+      margin-top: 32px;
+      padding-top: 26px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    article section {
+      padding: 0 0 42px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 42px;
+    }
+
+    article section:last-child { margin-bottom: 0; border-bottom: 0; }
+
+    h2 {
+      margin: 0 0 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(27px, 4vw, 38px);
+      font-weight: 500;
+      letter-spacing: -.025em;
+      line-height: 1.18;
+    }
+
+    p { margin: 0 0 17px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul { margin: 16px 0 0; padding-left: 22px; }
+    li { margin-bottom: 9px; padding-left: 5px; }
+    li::marker { color: var(--accent); }
+
+    .note {
+      padding: 22px 0 22px 22px;
+      border-left: 3px solid var(--accent);
+      color: var(--muted);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      padding-block: 32px 50px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a { font-weight: 700; text-decoration: none; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 760px) {
+      .hero { min-height: 580px; }
+      .hero-inner { min-height: 502px; }
+      main { display: block; }
+      aside { position: static; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 24px; padding-bottom: 42px; }
+      .summary { grid-column: 1 / -1; }
+      footer { flex-direction: column; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .progress { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="support.html"><span class="mark" aria-hidden="true">N</span>Nurse-Pay</a>
+      <a class="nav-link" href="support.html">Support →</a>
+    </nav>
+    <div class="hero-inner">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Your pay details stay yours.</h1>
+      <p class="lede">Nurse-Pay works without an account and keeps the contracts, shifts, notes, and settings you enter on your device.</p>
+    </div>
+  </header>
+
+  <main>
+    <aside aria-label="Policy details">
+      <div><span class="meta-label">Effective</span><p class="meta-value">July 20, 2026</p></div>
+      <div><span class="meta-label">Applies to</span><p class="meta-value">Nurse-Pay for iOS</p></div>
+      <p class="summary">The short version: no account, no ads, no analytics, and no sale or sharing of your data.</p>
+    </aside>
+
+    <article>
+      <section>
+        <h2>Information we collect</h2>
+        <p>Nurse-Pay does not collect, transmit, sell, or share your personal data. We do not use your information for advertising or tracking.</p>
+        <p>The contract rates, shift entries, notes, and settings you add are stored locally on your device. They are used only to calculate and display the pay estimates you request.</p>
+      </section>
+
+      <section>
+        <h2>Accounts and network access</h2>
+        <p>Nurse-Pay does not require or provide user accounts. The current version has no cloud sync and does not send your contracts or shifts to a Nurse-Pay server.</p>
+      </section>
+
+      <section>
+        <h2>Exports and sharing</h2>
+        <p>When you export a PDF or CSV, Nurse-Pay creates the file on your device and opens Apple’s system share sheet. You choose whether and where to share it.</p>
+        <p class="note">Any destination you select—such as Mail, Messages, Files, or another app—is governed by that destination’s own privacy practices.</p>
+      </section>
+
+      <section>
+        <h2>Backups and data deletion</h2>
+        <p>If device backup is enabled, Apple may include locally stored app data in a system backup according to your device and iCloud settings. Nurse-Pay does not control those settings.</p>
+        <p>You can remove all data from the app’s Privacy &amp; Settings screen. Deleting the app also removes its local data, subject to backups you control.</p>
+      </section>
+
+      <section>
+        <h2>Third-party services</h2>
+        <p>The current version does not include advertising, analytics, account, cloud-sync, or third-party data-collection SDKs.</p>
+      </section>
+
+      <section>
+        <h2>Children’s privacy</h2>
+        <p>Nurse-Pay is a professional pay-estimation tool and is not directed to children under 13. We do not knowingly collect information from children.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>If Nurse-Pay’s data practices change, this page and the App Store privacy disclosure will be updated. The effective date above shows when this policy was last revised.</p>
+      </section>
+
+      <section>
+        <h2>Contact us</h2>
+        <p>For privacy questions, email <a href="mailto:1535883467@qq.com?subject=Nurse-Pay%20Privacy">1535883467@qq.com</a>. Please do not include contract, patient, or other sensitive information in your message.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <span>© 2026 Nurse-Pay</span>
+    <span><a href="support.html">Support</a> &nbsp;·&nbsp; Privacy Policy</span>
+  </footer>
+
+  <script>
+    const progress = document.querySelector('.progress');
+    const updateProgress = () => {
+      const distance = document.documentElement.scrollHeight - innerHeight;
+      progress.style.width = `${distance > 0 ? (scrollY / distance) * 100 : 0}%`;
+    };
+    addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress();
+  </script>
+</body>
+</html>

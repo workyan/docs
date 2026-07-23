@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for Paint Calculator &amp; Weather.">
+  <meta name="theme-color" content="#174f9b">
+  <title>Privacy Policy · Paint Calculator &amp; Weather</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #5e687a;
+      --blue: #174f9b;
+      --blue-soft: #eaf2ff;
+      --paper: #fffdf8;
+      --ground: #f2eee6;
+      --line: #dcd6ca;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        linear-gradient(110deg, rgba(23, 79, 155, .07), transparent 36%),
+        var(--ground);
+      font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--blue); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid #f4b942; outline-offset: 4px; border-radius: 4px; }
+
+    .masthead {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(32px, 7vw, 76px) max(20px, calc((100vw - 900px) / 2));
+      color: var(--white);
+      background: var(--blue);
+    }
+
+    .masthead::after {
+      position: absolute;
+      right: -7rem;
+      bottom: -8rem;
+      width: 23rem;
+      height: 23rem;
+      border: 4.5rem solid rgba(255, 255, 255, .1);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .brand {
+      margin: 0 0 1.2rem;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 12ch;
+      margin: 0;
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      line-height: .98;
+      letter-spacing: -.055em;
+    }
+
+    .summary {
+      max-width: 45rem;
+      margin: 1.4rem 0 0;
+      color: rgba(255, 255, 255, .82);
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: clamp(28px, 6vw, 72px);
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: clamp(34px, 7vw, 76px) 0;
+    }
+
+    nav {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      font-size: .88rem;
+    }
+
+    nav p {
+      margin: 0 0 .7rem;
+      color: var(--muted);
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      display: block;
+      padding: .38rem 0;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .18s ease, transform .18s ease;
+    }
+
+    nav a:hover { color: var(--blue); transform: translateX(4px); }
+
+    article { min-width: 0; }
+
+    .effective {
+      margin: 0 0 2.4rem;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    section {
+      padding: 0 0 2.3rem;
+      border-bottom: 1px solid var(--line);
+      animation: rise .55s both;
+    }
+
+    section + section { padding-top: 2.3rem; }
+    section:nth-of-type(2) { animation-delay: .06s; }
+    section:nth-of-type(3) { animation-delay: .12s; }
+
+    h2 {
+      margin: 0 0 .65rem;
+      font-size: clamp(1.3rem, 3vw, 1.65rem);
+      line-height: 1.2;
+      letter-spacing: -.025em;
+    }
+
+    p { margin: .55rem 0; color: var(--muted); }
+    ul { margin: .8rem 0 0; padding-left: 1.25rem; color: var(--muted); }
+    li + li { margin-top: .55rem; }
+    strong { color: var(--ink); }
+
+    .note {
+      margin-top: 1rem;
+      padding: 1rem 1.1rem;
+      border-left: 4px solid var(--blue);
+      background: var(--blue-soft);
+      color: var(--ink);
+    }
+
+    footer {
+      width: min(900px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 0 0 44px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 700px) {
+      .layout { grid-template-columns: 1fr; }
+      nav { position: static; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+      nav p { width: 100%; }
+      nav a { padding: .2rem 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <p class="brand">Paint Calculator &amp; Weather</p>
+    <h1>Privacy, in plain language.</h1>
+    <p class="summary">Your paint projects stay on your device. Weather requests use only the location you choose, when you choose to check a forecast.</p>
+  </header>
+
+  <main class="layout">
+    <nav aria-label="Policy sections">
+      <p>On this page</p>
+      <a href="#overview">Overview</a>
+      <a href="#information">Information used</a>
+      <a href="#services">External services</a>
+      <a href="#choices">Your choices</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <article>
+      <p class="effective">Effective date: July 23, 2026</p>
+
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>Paint Calculator &amp; Weather does not require an account. We do not operate a server that collects or stores your paint projects, measurements, costs, saved locations, or preferences.</p>
+        <p>We do not sell personal information, show third-party advertising, or track you across apps and websites.</p>
+      </section>
+
+      <section id="information">
+        <h2>Information used by the app</h2>
+        <ul>
+          <li><strong>Project information.</strong> Measurements, room and color names, coverage, coat counts, prices, calculation results, and saved projects are processed and stored locally on your device.</li>
+          <li><strong>Location you enter.</strong> If you search for a city, state, or ZIP code, the search text is sent to Open-Meteo's geocoding service to find coordinates.</li>
+          <li><strong>Current location.</strong> If you tap “Use Current Location” and grant permission, the app receives your device coordinates and sends them to Open-Meteo to request a forecast. Location access is optional; manual search remains available.</li>
+          <li><strong>Preferences.</strong> App settings and defaults may be stored locally so the app can remember your choices.</li>
+        </ul>
+        <p class="note">The app uses location only after you request weather information. It does not use location for advertising or background tracking.</p>
+      </section>
+
+      <section id="services">
+        <h2>External services</h2>
+        <p>City search and forecast requests are made to <a href="https://open-meteo.com/" rel="external noopener noreferrer">Open-Meteo</a>. Open-Meteo may receive the search text or coordinates you request and technical data normally sent with an internet connection, such as an IP address. Its handling of that information is governed by its own privacy information and terms.</p>
+        <p>When available, your device's platform geocoding service may turn current coordinates into a readable place name. Apple also processes information necessary to distribute the app and operate the App Store under Apple's own policies.</p>
+      </section>
+
+      <section id="retention">
+        <h2>Retention and security</h2>
+        <p>We do not retain your projects or weather queries on developer-operated servers because the app does not send them to us. Locally saved information remains on your device until you delete it in the app, where supported, or delete the app. Internet requests use standard encrypted HTTPS connections.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children's privacy</h2>
+        <p>Paint Calculator &amp; Weather is a general utility and is not directed to children. We do not knowingly collect personal information from children.</p>
+      </section>
+
+      <section id="choices">
+        <h2>Your choices</h2>
+        <ul>
+          <li>Use city or ZIP search instead of granting location access.</li>
+          <li>Change or revoke location permission at any time in iOS Settings.</li>
+          <li>Delete the app to remove its locally stored projects and preferences.</li>
+        </ul>
+      </section>
+
+      <section id="changes">
+        <h2>Changes to this policy</h2>
+        <p>We may revise this policy when the app's features or data practices change. The effective date at the top of this page will show when the current version took effect.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>For a privacy question, please <a href="https://github.com/workyan/docs/issues/new?title=Paint%20Calculator%20%26%20Weather%20privacy%20question" rel="external noopener noreferrer">open a support request</a>. Do not include precise location data, project details, or other sensitive information in a public issue.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>Paint Calculator &amp; Weather · <a href="support.html">Support</a></footer>
+</body>
+</html>

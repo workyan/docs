@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#082c5b">
+  <meta name="description" content="钢材快算-算料清单成本报价技术支持、常见问题与联系方法。">
+  <link rel="icon" href="data:,">
+  <title>技术支持｜钢材快算</title>
+  <style>
+    :root{--navy:#082c5b;--blue:#0d4f91;--ink:#172331;--muted:#637083;--paper:#f2f5f8;--white:#fff;--line:#d6dee7;--pale:#e8f0f8}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--paper);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}
+    body:before{content:"";position:fixed;inset:0;z-index:-1;background:linear-gradient(rgba(8,44,91,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(8,44,91,.035) 1px,transparent 1px);background-size:28px 28px}
+    .progress{position:fixed;inset:0 auto auto 0;z-index:9;width:0;height:4px;background:#1a6bb8;box-shadow:0 0 14px rgba(26,107,184,.35)}
+    a{color:var(--blue);font-weight:650;text-underline-offset:4px}
+    a:hover{color:var(--navy)}
+    .hero{position:relative;overflow:hidden;color:#fff;background:var(--navy)}
+    .hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 63px,rgba(255,255,255,.045) 64px),linear-gradient(115deg,transparent 60%,rgba(36,117,191,.24))}
+    .hero:after{content:"24 / 7";position:absolute;right:-.02em;bottom:-.25em;color:rgba(255,255,255,.06);font:800 clamp(90px,19vw,230px)/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:-.09em}
+    .hero-inner,.content,footer{width:min(940px,calc(100% - 40px));margin:auto}
+    .hero-inner{position:relative;z-index:1;min-height:450px;padding:44px 0 68px;display:flex;flex-direction:column;justify-content:space-between;animation:rise .65s ease-out both}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.08em;text-decoration:none}
+    .mark{position:relative;width:25px;height:25px;border:2px solid #fff}
+    .mark:before,.mark:after{content:"";position:absolute;background:#fff}
+    .mark:before{width:2px;height:31px;left:10px;top:-5px;transform:rotate(45deg)}
+    .mark:after{width:31px;height:2px;left:-5px;top:10px;transform:rotate(45deg)}
+    .eyebrow{margin:52px 0 13px;color:#9dc7ec;font:700 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.17em;text-transform:uppercase}
+    h1{max-width:700px;margin:0;font-size:clamp(44px,8vw,76px);line-height:1.08;letter-spacing:-.045em}
+    .hero-copy{max-width:650px;margin:22px 0 0;color:#d8e6f3;font-size:clamp(16px,2.1vw,19px)}
+    .content{padding:68px 0 82px}
+    .contact{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:28px;margin-bottom:62px;padding:30px 32px;background:#fff;border-left:4px solid var(--blue);box-shadow:0 18px 50px rgba(8,44,91,.08);animation:rise .65s .12s ease-out both}
+    .contact h2{margin-bottom:7px}.contact p{color:var(--muted)}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 20px;color:#fff;background:var(--blue);text-decoration:none;white-space:nowrap;transition:transform .2s,background .2s}
+    .button:hover{color:#fff;background:var(--navy);transform:translateY(-2px)}
+    section{padding:0 0 42px}
+    section+section{padding-top:42px;border-top:1px solid var(--line)}
+    h2{margin:0 0 18px;color:var(--navy);font-size:clamp(23px,3vw,29px);line-height:1.3;letter-spacing:-.025em}
+    h3{margin:0;color:var(--navy);font-size:17px}
+    p{margin:0}p+p,ol{margin-top:12px}
+    ol{padding-left:1.3em;margin-bottom:0}li+li{margin-top:7px}
+    details{border-top:1px solid var(--line)}
+    details:last-child{border-bottom:1px solid var(--line)}
+    summary{position:relative;padding:20px 40px 20px 0;cursor:pointer;color:var(--navy);font-weight:750;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"＋";position:absolute;right:2px;top:16px;font-size:22px;font-weight:400;transition:transform .2s}
+    details[open] summary:after{transform:rotate(45deg)}
+    details p{padding:0 34px 20px 0;color:var(--muted)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+    .step{padding:24px;background:var(--white)}
+    .num{display:block;margin-bottom:22px;color:var(--blue);font:800 13px/1 ui-monospace,SFMono-Regular,Menlo,monospace}
+    .step p{margin-top:8px;color:var(--muted);font-size:14px}
+    .note{margin-top:20px;padding:18px 20px;background:var(--pale);color:#334c68}
+    footer{display:flex;justify-content:space-between;gap:20px;padding:28px 0 44px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+    @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+    @media(max-width:700px){.hero-inner{min-height:400px}.hero-inner,.content,footer{width:min(100% - 28px,940px)}.content{padding-top:42px}.contact{grid-template-columns:1fr;padding:24px}.button{width:100%}.steps{grid-template-columns:1fr}footer{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="./privacy.html"><span class="mark" aria-hidden="true"></span>钢材快算</a>
+      <div>
+        <p class="eyebrow">Technical Support · iOS</p>
+        <h1>技术支持</h1>
+        <p class="hero-copy">关于重量计算、项目清单、成本报价或文件导出的疑问，可以先查看下方说明，也可以直接联系我们。</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="contact">
+      <div>
+        <h2>需要进一步帮助？</h2>
+        <p>邮件通常会在 2 个工作日内回复。请附上 App 版本、设备型号和复现步骤。</p>
+      </div>
+      <a class="button" href="mailto:1535883467@qq.com?subject=%E9%92%A2%E6%9D%90%E5%BF%AB%E7%AE%97%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">发送支持邮件 ↗</a>
+    </div>
+
+    <section>
+      <h2>提交问题时，请提供</h2>
+      <div class="steps">
+        <div class="step"><span class="num">01</span><h3>使用环境</h3><p>iPhone 型号、iOS 版本与钢材快算版本。</p></div>
+        <div class="step"><span class="num">02</span><h3>复现步骤</h3><p>使用的材料、型材、规格、单位及操作顺序。</p></div>
+        <div class="step"><span class="num">03</span><h3>预期与实际</h3><p>你预期的结果和应用实际显示的结果。</p></div>
+      </div>
+      <p class="note">为保护隐私，请在截图、清单或导出文件中遮盖真实客户姓名、电话、报价及其他敏感信息。</p>
+    </section>
+
+    <section>
+      <h2>常见问题</h2>
+      <div class="faq">
+        <details>
+          <summary>理论重量为什么与实际过磅重量不同？</summary>
+          <p>理论重量由输入尺寸、材料密度和计算公式得出。实际材料可能存在尺寸公差、密度差异、表面处理、含水或称重误差，因此两者可能不同。应用中的结果用于估算与对账参考，实际采购和结算应以适用标准、供应商资料、合同约定及实物称重为准。</p>
+        </details>
+        <details>
+          <summary>怎样修改材料密度？</summary>
+          <p>在计算页选择材料时可查看当前使用的密度；也可在“设置”中调整默认材料密度或创建自定义材料。修改后请确认密度单位为 kg/m³，并重新核对计算结果。</p>
+        </details>
+        <details>
+          <summary>成本、加价率和毛利率有什么区别？</summary>
+          <p>成本是材料、损耗、加工、运输等费用的合计。加价率通常按“利润 ÷ 成本”计算，毛利率通常按“利润 ÷ 销售额”计算，两者分母不同。请依据实际业务口径选择报价方式。</p>
+        </details>
+        <details>
+          <summary>数据会上传或同步到云端吗？</summary>
+          <p>不会。当前版本无需账号，项目、客户、规格、历史和报价数据仅保存在设备本机。应用没有开发者云同步服务；系统级设备备份是否开启由你的 Apple 设置决定。</p>
+        </details>
+        <details>
+          <summary>如何备份或迁移项目？</summary>
+          <p>使用应用内的数据导出功能生成本地备份，再通过 iOS 文件选择器保存到你信任的位置。恢复时选择对应的备份文件。导出后请妥善保管文件，其中可能包含客户或报价信息。</p>
+        </details>
+        <details>
+          <summary>导出的图片或 CSV 找不到了怎么办？</summary>
+          <p>导出完成后需要在 iOS 分享面板中选择“存储到文件”或其他接收位置。若直接关闭分享面板，文件可能不会被保存。请重新导出并确认目标文件夹或接收 App。</p>
+        </details>
+        <details>
+          <summary>删除 App 后数据还能恢复吗？</summary>
+          <p>卸载应用通常会移除应用沙盒内的本地数据。除非此前已主动导出备份，或你的 Apple 设备备份包含相关数据，否则开发者无法代为恢复。删除前请先完成本地备份。</p>
+        </details>
+        <details>
+          <summary>可以把计算结果直接用于工程验收吗？</summary>
+          <p>不建议。钢材快算是算料、成本估算和报价辅助工具，不提供结构承载力或安全验算，也不替代现行标准、设计文件、供应商质保资料、专业工程师判断或实物检验。</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <h2>联系与隐私</h2>
+      <p>支持邮箱：<a href="mailto:1535883467@qq.com?subject=%E9%92%A2%E6%9D%90%E5%BF%AB%E7%AE%97%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">1535883467@qq.com</a></p>
+      <p>发送邮件即表示你主动选择通过邮件服务商传递相关内容。请只提供解决问题所需的信息。关于应用的数据处理方式，请阅读<a href="./privacy.html">《钢材快算隐私政策》</a>。</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 钢材快算</span>
+    <a href="./privacy.html">查看隐私政策 →</a>
+  </footer>
+  <script>
+    const bar=document.querySelector('.progress');
+    const update=()=>{const max=document.documentElement.scrollHeight-innerHeight;bar.style.width=(max>0?scrollY/max*100:0)+'%'};
+    addEventListener('scroll',update,{passive:true});update();
+  </script>
+</body>
+</html>

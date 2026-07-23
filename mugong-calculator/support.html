@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="木工快算-柜体酒格计算器技术支持、常见问题与联系方式。">
+  <link rel="icon" href="data:,">
+  <title>技术支持｜木工快算</title>
+  <style>
+    :root {
+      --forest: #173f35;
+      --forest-2: #24584a;
+      --oak: #c07a35;
+      --ink: #18221f;
+      --muted: #65706b;
+      --paper: #f4f0e7;
+      --white: #fffdf8;
+      --line: #d7d1c5;
+      --pale: #e9eee8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+        "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: .45;
+      background:
+        repeating-linear-gradient(3deg, transparent 0 31px, rgba(74, 58, 36, .035) 32px),
+        linear-gradient(90deg, rgba(255,255,255,.35), transparent 40%, rgba(255,255,255,.28));
+    }
+    a {
+      color: var(--forest-2);
+      font-weight: 680;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+    a:hover { color: var(--oak); }
+    .progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 10;
+      width: 0;
+      height: 4px;
+      background: var(--oak);
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 460px;
+      color: #fff;
+      background: var(--forest);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(90deg, transparent 0 79px, rgba(255,255,255,.035) 80px),
+        radial-gradient(circle at 80% 25%, rgba(192,122,53,.28), transparent 28%);
+    }
+    .hero::after {
+      content: "45°";
+      position: absolute;
+      right: -.03em;
+      bottom: -.28em;
+      color: rgba(255,255,255,.055);
+      font: 850 clamp(120px, 25vw, 280px)/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
+      letter-spacing: -.12em;
+    }
+    .hero-inner, .content, footer {
+      width: min(980px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      min-height: 460px;
+      padding: 42px 0 66px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: rise .65s ease-out both;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      width: fit-content;
+      color: #fff;
+      font-weight: 820;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+    .mark {
+      position: relative;
+      width: 27px;
+      height: 27px;
+      border: 2px solid #e8c59e;
+    }
+    .mark::before, .mark::after {
+      content: "";
+      position: absolute;
+      background: #e8c59e;
+    }
+    .mark::before { width: 2px; height: 35px; left: 11px; top: -6px; transform: rotate(45deg); }
+    .mark::after { width: 35px; height: 2px; left: -6px; top: 11px; transform: rotate(45deg); }
+    .eyebrow {
+      margin: 54px 0 13px;
+      color: #e8c59e;
+      font: 750 12px/1.4 ui-monospace, "SFMono-Regular", Menlo, monospace;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 8vw, 78px);
+      line-height: 1.06;
+      letter-spacing: -.05em;
+    }
+    .hero-copy {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: #d9e4df;
+      font-size: clamp(16px, 2.1vw, 19px);
+    }
+    .content { padding: 68px 0 86px; }
+    .contact {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 28px;
+      margin-bottom: 62px;
+      padding: 30px 32px;
+      border-left: 4px solid var(--oak);
+      background: var(--white);
+      box-shadow: 0 20px 55px rgba(23, 63, 53, .08);
+      animation: rise .65s .12s ease-out both;
+    }
+    .contact h2 { margin-bottom: 7px; }
+    .contact p { color: var(--muted); }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 21px;
+      color: #fff;
+      background: var(--forest-2);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: transform .2s, background .2s;
+    }
+    .button:hover { color: #fff; background: var(--forest); transform: translateY(-2px); }
+    section { padding: 0 0 43px; }
+    section + section { padding-top: 43px; border-top: 1px solid var(--line); }
+    h2 {
+      margin: 0 0 18px;
+      color: var(--forest);
+      font-size: clamp(23px, 3vw, 29px);
+      line-height: 1.3;
+      letter-spacing: -.025em;
+    }
+    h3 { margin: 0; color: var(--forest); font-size: 17px; }
+    p { margin: 0; }
+    p + p, ol { margin-top: 12px; }
+    ol { margin-bottom: 0; padding-left: 1.3em; }
+    li + li { margin-top: 7px; }
+    details { border-top: 1px solid var(--line); }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary {
+      position: relative;
+      padding: 20px 42px 20px 0;
+      color: var(--forest);
+      cursor: pointer;
+      font-weight: 760;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "＋";
+      position: absolute;
+      right: 2px;
+      top: 16px;
+      font-size: 22px;
+      font-weight: 400;
+      transition: transform .2s;
+    }
+    details[open] summary::after { transform: rotate(45deg); }
+    details p { padding: 0 38px 20px 0; color: var(--muted); }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      border: 1px solid var(--line);
+      background: var(--line);
+    }
+    .step { padding: 25px; background: var(--white); }
+    .num {
+      display: block;
+      margin-bottom: 22px;
+      color: var(--oak);
+      font: 850 13px/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
+    }
+    .step p { margin-top: 8px; color: var(--muted); font-size: 14px; }
+    .note { margin-top: 20px; padding: 18px 20px; background: var(--pale); color: #3f574f; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 28px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+    @media (max-width: 700px) {
+      .hero, .hero-inner { min-height: 410px; }
+      .hero-inner, .content, footer { width: min(100% - 28px, 980px); }
+      .content { padding-top: 44px; }
+      .contact { grid-template-columns: 1fr; padding: 24px; }
+      .button { width: 100%; }
+      .steps { grid-template-columns: 1fr; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="./privacy.html"><span class="mark" aria-hidden="true"></span>木工快算</a>
+      <div>
+        <p class="eyebrow">Technical Support · iOS</p>
+        <h1>技术支持</h1>
+        <p class="hero-copy">关于柜体板件、等分、酒格、几何计算、项目清单或结果分享的疑问，可以先查看下方说明，也可以直接联系我们。</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="contact">
+      <div>
+        <h2>需要进一步帮助？</h2>
+        <p>邮件通常会在 2 个工作日内回复。请附上 App 版本、设备型号和复现步骤。</p>
+      </div>
+      <a class="button" href="mailto:1535883467@qq.com?subject=%E6%9C%A8%E5%B7%A5%E5%BF%AB%E7%AE%97%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">发送支持邮件 ↗</a>
+    </div>
+
+    <section>
+      <h2>提交问题时，请提供</h2>
+      <div class="steps">
+        <div class="step"><span class="num">01</span><h3>使用环境</h3><p>iPhone 型号、iOS 版本与木工快算版本。</p></div>
+        <div class="step"><span class="num">02</span><h3>输入与工艺</h3><p>计算器类型、尺寸、板厚、间隙、结构方式及操作顺序。</p></div>
+        <div class="step"><span class="num">03</span><h3>预期与实际</h3><p>你预期的结果和应用实际显示的结果，必要时附截图。</p></div>
+      </div>
+      <p class="note">为保护隐私，请在截图、清单或导出文件中遮盖真实客户姓名、地址和其他敏感信息。涉及尺寸偏差时，请注明单位。</p>
+    </section>
+
+    <section>
+      <h2>常见问题</h2>
+      <div class="faq">
+        <details>
+          <summary>计算结果可以直接下料吗？</summary>
+          <p>不建议未经复核直接下料。应用输出的是依据输入参数得到的理论尺寸。现场误差、板材实际厚度、锯缝、封边、五金、安装方式和工艺习惯都可能影响最终尺寸。请在加工前复测现场并结合实际工艺确认。</p>
+        </details>
+        <details>
+          <summary>为什么板件尺寸与我习惯的算法不同？</summary>
+          <p>请先确认顶底板结构、背板结构、板厚、背板厚度和加工余量等选项。侧板包顶底板与顶底板盖侧板的扣减方式不同；应用不会替你默认所有工艺，切换结构后请重新核对结果。</p>
+        </details>
+        <details>
+          <summary>酒格计算为什么需要再次复核？</summary>
+          <p>酒格结果会受到开口尺寸、板条宽厚、角度、槽口方式、锯缝和安装余量影响。不同加工和连接方式可能需要不同修正。请先用废料试装，并以实际开口和加工设备为准。</p>
+        </details>
+        <details>
+          <summary>怎样调整结果保留的小数位？</summary>
+          <p>前往“设置”，在“结果精度”中选择整数 mm、0.1 mm 或 0.01 mm。显示精度不代表现场施工或加工设备能够达到同等精度。</p>
+        </details>
+        <details>
+          <summary>我的项目和材料清单会上传到云端吗？</summary>
+          <p>不会。当前版本无需账号，项目、材料清单、最近使用、收藏和偏好仅保存在设备本机。应用没有开发者云同步服务；系统级设备备份是否开启由你的 Apple 设置决定。</p>
+        </details>
+        <details>
+          <summary>删除 App 后数据还能恢复吗？</summary>
+          <p>卸载应用通常会移除应用沙盒中的本地数据，开发者无法代为恢复。若你使用了 Apple 的设备备份，能否恢复取决于 Apple 服务和你的系统设置。删除应用或更换设备前，请先妥善保存重要项目。</p>
+        </details>
+        <details>
+          <summary>分享或导出的文件在哪里？</summary>
+          <p>应用会打开 iOS 系统分享面板。你需要选择“存储到文件”、其他接收 App 或联系人；若直接关闭分享面板，内容可能不会保存。接收位置由你在系统面板中的选择决定。</p>
+        </details>
+        <details>
+          <summary>发现计算结果可能有误，应该怎么办？</summary>
+          <p>请立即停止将该结果用于加工，保留输入参数和结果截图，并通过支持邮箱联系我们。邮件中请注明计算器类型、全部输入、结构选项、单位、预期公式和 App 版本，以便复核。</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <h2>使用与安全提示</h2>
+      <p>木工快算用于辅助现场计算和整理材料，不替代现场测量、施工图、设备说明、适用规范或专业判断。使用锯切、开槽等设备时，请遵守设备厂商说明并佩戴适当防护用品。涉及承重、结构安全、电气或消防要求时，应咨询具备相应资质的专业人员。</p>
+    </section>
+
+    <section>
+      <h2>联系与隐私</h2>
+      <p>支持邮箱：<a href="mailto:1535883467@qq.com?subject=%E6%9C%A8%E5%B7%A5%E5%BF%AB%E7%AE%97%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">1535883467@qq.com</a></p>
+      <p>发送邮件即表示你主动选择通过邮件服务商传递相关内容。请只提供解决问题所需的信息。关于应用的数据处理方式，请阅读<a href="./privacy.html">《木工快算隐私政策》</a>。</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 木工快算</span>
+    <a href="./privacy.html">查看隐私政策 →</a>
+  </footer>
+  <script>
+    const bar = document.querySelector(".progress");
+    const update = () => {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      bar.style.width = (max > 0 ? scrollY / max * 100 : 0) + "%";
+    };
+    addEventListener("scroll", update, { passive: true });
+    update();
+  </script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#173f35">
+  <meta name="description" content="木工快算-柜体酒格计算器隐私政策。应用无需账号，不接入广告，计算、项目与偏好数据仅保存在本机。">
+  <link rel="icon" href="data:,">
+  <title>隐私政策｜木工快算</title>
+  <style>
+    :root {
+      --forest: #173f35;
+      --forest-2: #24584a;
+      --oak: #c07a35;
+      --ink: #18221f;
+      --muted: #65706b;
+      --paper: #f4f0e7;
+      --white: #fffdf8;
+      --line: #d7d1c5;
+      --pale: #e9eee8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
+        "Microsoft YaHei", sans-serif;
+      line-height: 1.75;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: .45;
+      background:
+        repeating-linear-gradient(3deg, transparent 0 31px, rgba(74, 58, 36, .035) 32px),
+        linear-gradient(90deg, rgba(255,255,255,.35), transparent 40%, rgba(255,255,255,.28));
+    }
+    a {
+      color: var(--forest-2);
+      font-weight: 680;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+    a:hover { color: var(--oak); }
+    .progress {
+      position: fixed;
+      inset: 0 auto auto 0;
+      z-index: 10;
+      width: 0;
+      height: 4px;
+      background: var(--oak);
+    }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 460px;
+      color: #fff;
+      background: var(--forest);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(90deg, transparent 0 79px, rgba(255,255,255,.035) 80px),
+        radial-gradient(circle at 80% 25%, rgba(192,122,53,.28), transparent 28%);
+    }
+    .hero::after {
+      content: "18";
+      position: absolute;
+      right: -.03em;
+      bottom: -.30em;
+      color: rgba(255,255,255,.055);
+      font: 850 clamp(160px, 30vw, 330px)/1 ui-monospace, "SFMono-Regular", Menlo, monospace;
+      letter-spacing: -.12em;
+    }
+    .hero-inner, .layout, footer {
+      width: min(1080px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      min-height: 460px;
+      padding: 42px 0 66px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: rise .65s ease-out both;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      width: fit-content;
+      color: #fff;
+      font-weight: 820;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+    .mark {
+      position: relative;
+      width: 27px;
+      height: 27px;
+      border: 2px solid #e8c59e;
+    }
+    .mark::before, .mark::after {
+      content: "";
+      position: absolute;
+      background: #e8c59e;
+    }
+    .mark::before { width: 2px; height: 35px; left: 11px; top: -6px; transform: rotate(45deg); }
+    .mark::after { width: 35px; height: 2px; left: -6px; top: 11px; transform: rotate(45deg); }
+    .eyebrow {
+      margin: 54px 0 13px;
+      color: #e8c59e;
+      font: 750 12px/1.4 ui-monospace, "SFMono-Regular", Menlo, monospace;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(44px, 8vw, 78px);
+      line-height: 1.06;
+      letter-spacing: -.05em;
+    }
+    .hero-copy {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: #d9e4df;
+      font-size: clamp(16px, 2.1vw, 19px);
+    }
+    .meta { margin: 30px 0 0; color: #abc3ba; font-size: 14px; }
+    .layout {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 76px;
+      padding: 72px 0 86px;
+    }
+    nav {
+      position: sticky;
+      top: 30px;
+      align-self: start;
+      font-size: 14px;
+    }
+    nav strong {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--forest);
+      font-size: 12px;
+      letter-spacing: .14em;
+    }
+    nav a {
+      display: block;
+      padding: 7px 0;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color .2s, transform .2s;
+    }
+    nav a:hover, nav a.active { color: var(--forest); transform: translateX(5px); }
+    article { min-width: 0; }
+    .summary {
+      margin: 0 0 50px;
+      padding: 25px 28px;
+      border-left: 4px solid var(--oak);
+      background: var(--white);
+      box-shadow: 0 20px 55px rgba(23, 63, 53, .07);
+      font-size: 17px;
+      animation: rise .65s .12s ease-out both;
+    }
+    section { scroll-margin-top: 30px; padding: 0 0 36px; }
+    section + section { padding-top: 36px; border-top: 1px solid var(--line); }
+    h2 {
+      margin: 0 0 14px;
+      color: var(--forest);
+      font-size: clamp(22px, 3vw, 28px);
+      line-height: 1.3;
+      letter-spacing: -.025em;
+    }
+    p { margin: 0; }
+    p + p, ul { margin-top: 12px; }
+    ul { margin-bottom: 0; padding-left: 1.25em; }
+    li + li { margin-top: 7px; }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 28px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+    @media (max-width: 760px) {
+      .hero, .hero-inner { min-height: 410px; }
+      .hero-inner, .layout, footer { width: min(100% - 28px, 1080px); }
+      .layout { display: block; padding-top: 44px; }
+      nav { position: static; display: flex; gap: 8px; overflow-x: auto; margin-bottom: 42px; padding-bottom: 8px; }
+      nav strong { display: none; }
+      nav a { flex: 0 0 auto; padding: 7px 11px; border: 1px solid var(--line); background: var(--white); }
+      nav a:hover, nav a.active { transform: none; }
+      .summary { padding: 21px; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="./support.html"><span class="mark" aria-hidden="true"></span>木工快算</a>
+      <div>
+        <p class="eyebrow">Privacy Policy · Version 1.0</p>
+        <h1>隐私政策</h1>
+        <p class="hero-copy">你的尺寸、项目和材料清单属于你。木工快算无需注册，不接入广告，不进行用户跟踪；当前版本的数据仅留在你的设备上。</p>
+        <p class="meta">生效日期：2026 年 7 月 23 日</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <nav aria-label="本页目录">
+      <strong>政策目录</strong>
+      <a href="#scope">适用范围</a>
+      <a href="#local-data">本机数据</a>
+      <a href="#collection">收集与跟踪</a>
+      <a href="#permissions">设备权限</a>
+      <a href="#sharing">导出与分享</a>
+      <a href="#storage">保存与删除</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+
+    <article>
+      <div class="summary"><strong>一句话说明：</strong>当前版本不会向开发者服务器上传或收集你的个人信息、计算输入、项目记录、材料清单或使用行为。</div>
+
+      <section id="scope">
+        <h2>1. 适用范围</h2>
+        <p>本隐私政策适用于 iOS 应用“木工快算-柜体酒格计算器”（以下简称“木工快算”），说明应用在提供柜体板件、柜门与抽屉等分、层板与格栅、酒格、木工几何及单位换算等功能时如何处理信息。</p>
+      </section>
+
+      <section id="local-data">
+        <h2>2. 在设备本机处理的信息</h2>
+        <p>为了完成你主动使用的功能，木工快算可能在设备本机处理和保存：</p>
+        <ul>
+          <li>柜体、板件、门板、抽屉、层板、格栅及酒格的尺寸、数量、间隙、板厚、角度和加工余量；</li>
+          <li>计算结果、最近使用记录、收藏项目及材料清单；</li>
+          <li>结果精度、默认板厚、默认加工余量等应用偏好。</li>
+        </ul>
+        <p>这些信息仅用于完成本地计算、保存项目和恢复你的使用状态，不会发送至开发者服务器。</p>
+      </section>
+
+      <section id="collection">
+        <h2>3. 数据收集、账号与跟踪</h2>
+        <p>当前版本没有账号系统、云同步或开发者自建后端，不收集可识别你身份的数据，不使用 IDFA，不接入广告 SDK、第三方分析 SDK或第三方崩溃分析 SDK，也不会跨其他公司的 App 或网站跟踪你。</p>
+      </section>
+
+      <section id="permissions">
+        <h2>4. 设备权限</h2>
+        <p>当前版本的核心功能不主动申请定位、通讯录、摄像头、照片、麦克风、蓝牙、本地网络或跟踪权限。若后续版本因新增功能需要申请权限，应用会在调用前通过 iOS 系统提示说明用途，并同步更新本政策。</p>
+      </section>
+
+      <section id="sharing">
+        <h2>5. 导出与系统分享</h2>
+        <p>当你主动使用导出或分享功能时，相关计算结果、图片、PDF 或 CSV 文件可能通过 iOS 系统分享面板交给你选择的应用、云盘或联系人。接收方可能依据其自身隐私政策处理这些内容。分享前请确认文件中没有不希望披露的客户、项目或现场信息。</p>
+      </section>
+
+      <section>
+        <h2>6. App Store 与 Apple 服务</h2>
+        <p>应用通过 Apple App Store 分发。Apple 可能依据其自身政策处理购买、下载、商店账户、系统诊断或设备备份相关信息。木工快算不会从 Apple 获得你的完整付款信息。由 Apple 控制的数据处理以 Apple 的隐私政策和你的系统设置为准。</p>
+      </section>
+
+      <section id="storage">
+        <h2>7. 数据保存、删除与安全</h2>
+        <p>应用数据保存在 iOS 应用沙盒中，主要受设备锁、iOS 沙盒和你的系统安全设置保护。你可以在应用内清除支持删除的记录，或卸载应用以移除其本地数据。开发者无法访问或代为恢复这些本机数据。</p>
+        <p>如果你启用了 Apple 的设备备份，备份副本的保存与删除由 Apple 服务及你的设置决定。重要项目请在卸载应用或更换设备前自行妥善备份。</p>
+      </section>
+
+      <section>
+        <h2>8. 儿童隐私</h2>
+        <p>木工快算是面向装修木工、定制柜安装人员和木工爱好者的专业工具，不以儿童为目标用户，也不会主动收集儿童个人信息。</p>
+      </section>
+
+      <section>
+        <h2>9. 政策更新</h2>
+        <p>如果应用新增账号、云同步、在线服务、统计、崩溃分析或其他会改变数据处理方式的功能，我们会在发布相关版本时更新本政策并修订生效日期。建议在应用更新后再次查看本页。</p>
+      </section>
+
+      <section id="contact">
+        <h2>10. 联系我们</h2>
+        <p>如对本政策或数据处理方式有疑问，请发送邮件至 <a href="mailto:1535883467@qq.com?subject=%E6%9C%A8%E5%B7%A5%E5%BF%AB%E7%AE%97%E9%9A%90%E7%A7%81%E9%97%AE%E9%A2%98">1535883467@qq.com</a>，或访问<a href="./support.html">技术支持页面</a>。邮件中请勿附带不必要的客户资料、项目文件或其他敏感信息。</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <span>© 2026 木工快算</span>
+    <a href="./support.html">前往技术支持 →</a>
+  </footer>
+  <script>
+    const bar = document.querySelector(".progress");
+    const links = [...document.querySelectorAll("nav a")];
+    const sections = [...document.querySelectorAll("article section[id]")];
+    const updateProgress = () => {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      bar.style.width = (max > 0 ? scrollY / max * 100 : 0) + "%";
+    };
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(entry => entry.isIntersecting).at(-1);
+      if (!current) return;
+      links.forEach(link => link.classList.toggle("active", link.hash === "#" + current.target.id));
+    }, { rootMargin: "-20% 0px -65% 0px" });
+    sections.forEach(section => observer.observe(section));
+    addEventListener("scroll", updateProgress, { passive: true });
+    updateProgress();
+  </script>
+</body>
+</html>

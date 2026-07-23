@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="管算通-管道计算器支持与反馈。">
+  <title>支持与反馈｜管算通-管道计算器</title>
+  <style>
+    :root { color-scheme: light; --ink: #15211c; --muted: #5b6a62; --line: #dfe7e1; --surface: #f7f9f6; --green: #176b46; --pale: #e8f1e9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--surface); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; font-size: 16px; line-height: 1.8; }
+    main { width: min(780px, calc(100% - 40px)); margin: 0 auto; padding: 64px 0 88px; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 36px; }
+    .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--green); font-size: 14px; font-weight: 700; letter-spacing: .08em; text-decoration: none; }
+    .mark { width: 10px; height: 10px; border-radius: 50%; background: currentColor; box-shadow: 16px 0 0 #91b9a0; }
+    h1 { max-width: 650px; margin: 26px 0 10px; font-size: clamp(32px, 7vw, 50px); line-height: 1.14; letter-spacing: -.045em; }
+    .intro, .meta { margin: 0; color: var(--muted); }
+    .meta { margin-top: 14px; font-size: 14px; }
+    article { margin-top: 42px; }
+    section { padding: 25px 0; border-bottom: 1px solid var(--line); }
+    h2 { margin: 0 0 9px; font-size: 20px; line-height: 1.35; letter-spacing: -.018em; }
+    p { margin: 0; }
+    p + p { margin-top: 12px; }
+    ol { margin: 10px 0 0; padding-left: 1.35em; }
+    li + li { margin-top: 4px; }
+    a { color: var(--green); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .action { display: inline-block; margin-top: 16px; padding: 11px 18px; border-radius: 4px; background: var(--green); color: #fff; font-weight: 700; line-height: 1.4; text-decoration: none; }
+    .note { margin-top: 34px; padding: 20px 22px; background: var(--pale); border-left: 3px solid var(--green); color: #254334; }
+    footer { margin-top: 32px; color: var(--muted); font-size: 14px; }
+    @media (prefers-color-scheme: dark) { :root { color-scheme: dark; --ink: #e8f0ea; --muted: #b8c5bc; --line: #34433a; --surface: #142018; --green: #7ed3a2; --pale: #1c3024; } .action { color: #092114; } }
+    @media (max-width: 520px) { main { width: min(100% - 32px, 780px); padding-top: 42px; } header { padding-bottom: 28px; } section { padding: 22px 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./support.html"><span class="mark" aria-hidden="true"></span>管算通</a>
+      <h1>支持与反馈</h1>
+      <p class="intro">我们会持续改进计算口径和使用体验。请通过文档仓库提交问题或建议。</p>
+      <p class="meta">当前版本：1.0.0（1）</p>
+    </header>
+    <article>
+      <section>
+        <h2>提交问题</h2>
+        <p>请在 GitHub Issues 中描述问题、提出建议或反馈计算口径。为保护项目隐私，请不要上传包含敏感工程资料的截图或文件。</p>
+        <a class="action" href="https://github.com/workyan/docs/issues/new/choose">提交支持请求</a>
+      </section>
+      <section>
+        <h2>反馈时请尽量提供</h2>
+        <ol>
+          <li>设备型号、iOS 版本和应用版本；</li>
+          <li>所使用的计算类型、单位和输入参数；</li>
+          <li>预期结果与实际结果；</li>
+          <li>如有必要，经脱敏处理后的截图。</li>
+        </ol>
+      </section>
+      <section>
+        <h2>常见问题</h2>
+        <p><strong>需要注册或联网吗？</strong><br>不需要。核心计算在设备上离线完成，无需账号。</p>
+        <p><strong>数据会上传吗？</strong><br>不会。项目、历史记录和设置仅存储在本机；仅当您主动发起分享时，所选内容才会交由系统分享服务处理。</p>
+        <p><strong>计算结果能否直接用于施工？</strong><br>不能作为唯一依据。结果仅用于估算、放样辅助和技术参考；施工前请复核现场测量、材料规格及当地规范。</p>
+      </section>
+      <section>
+        <h2>隐私政策</h2>
+        <p>请阅读<a href="./privacy.html">《管算通-管道计算器隐私政策》</a>，了解数据处理方式。</p>
+      </section>
+    </article>
+    <p class="note">我们无法通过支持请求替代工程审核、施工方案设计或安全责任判断。</p>
+    <footer>© 2026 管算通-管道计算器</footer>
+  </main>
+</body>
+</html>

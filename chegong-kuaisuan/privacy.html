@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#143a31">
+  <meta name="description" content="车工快算-数控车床计算器隐私政策。">
+  <link rel="icon" href="data:,">
+  <title>隐私政策｜车工快算</title>
+  <style>
+    :root {
+      --ink: #14201d;
+      --muted: #5d6c67;
+      --paper: #f4f1e8;
+      --surface: #fffdf8;
+      --line: #d5d5c9;
+      --accent: #0b765e;
+      --deep: #143a31;
+      --soft: #dfece6;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(20, 58, 49, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 58, 49, .045) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+        "Microsoft YaHei", "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 650;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover { color: var(--deep); }
+
+    .topbar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent) 0 72%, var(--deep) 72%);
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: clamp(40px, 8vw, 88px) 0 72px;
+    }
+
+    header {
+      position: relative;
+      padding: 0 0 clamp(34px, 6vw, 58px);
+      border-bottom: 1px solid var(--line);
+      animation: rise .55s ease-out both;
+    }
+
+    header::after {
+      content: "Ø";
+      position: absolute;
+      right: 0;
+      bottom: 22px;
+      color: rgba(11, 118, 94, .13);
+      font: 700 clamp(76px, 14vw, 140px)/1 ui-monospace, monospace;
+      pointer-events: none;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 42px;
+      color: var(--deep);
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .brand-mark {
+      width: 18px;
+      height: 18px;
+      border: 5px solid var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--surface), 0 0 0 3px var(--accent);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font: 700 13px/1.3 ui-monospace, "SFMono-Regular", Menlo, monospace;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+      letter-spacing: -.025em;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0;
+      font-size: clamp(38px, 8vw, 68px);
+    }
+
+    .meta {
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .summary {
+      margin: 34px 0 50px;
+      padding: 24px 26px;
+      border-left: 4px solid var(--accent);
+      background: rgba(255, 253, 248, .72);
+      font-size: 17px;
+      animation: rise .55s .1s ease-out both;
+    }
+
+    article {
+      padding: clamp(26px, 5vw, 48px);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      box-shadow: 0 24px 70px rgba(20, 32, 29, .08);
+      animation: rise .55s .18s ease-out both;
+    }
+
+    section + section {
+      margin-top: 34px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: var(--deep);
+      font-size: clamp(21px, 4vw, 26px);
+    }
+
+    p { margin: 0; }
+
+    p + p, ul { margin-top: 12px; }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 1.25em;
+    }
+
+    li + li { margin-top: 7px; }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 560px) {
+      main { width: min(100% - 22px, 900px); padding-top: 30px; }
+      .brand { margin-bottom: 32px; }
+      header::after { bottom: 18px; }
+      article { padding: 24px 20px; }
+      .summary { padding: 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar" aria-hidden="true"></div>
+  <main>
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span>车工快算</div>
+      <p class="eyebrow">Privacy Policy · v1.0</p>
+      <h1>隐私政策</h1>
+      <p class="meta">生效日期：2026 年 7 月 23 日</p>
+    </header>
+
+    <div class="summary">
+      <strong>简要说明：</strong>车工快算无需注册或登录，不接入广告，不进行用户跟踪。计算输入、历史记录、收藏、备注和偏好仅保存在你的设备本机，不会上传至开发者服务器。
+    </div>
+
+    <article>
+      <section>
+        <h2>1. 适用范围</h2>
+        <p>本隐私政策适用于 iOS 应用“车工快算-数控车床计算器”（以下简称“车工快算”）。本政策说明应用如何处理你在使用圆弧切点、锥度、螺纹、倒角、槽及常用坐标等计算功能时产生的信息。</p>
+      </section>
+
+      <section>
+        <h2>2. 我们处理的信息</h2>
+        <p>为了完成计算、恢复使用状态和提供本地记录功能，应用可能在你的设备本机处理和保存：</p>
+        <ul>
+          <li>你主动输入的工件尺寸、单位、计算参数和选项；</li>
+          <li>计算结果、历史记录、收藏及不超过应用限制的本地备注；</li>
+          <li>界面偏好、最近使用状态和草稿等应用设置。</li>
+        </ul>
+        <p>这些信息用于在应用内完成计算和恢复状态，不会被发送至开发者服务器。</p>
+      </section>
+
+      <section>
+        <h2>3. 数据收集与跟踪</h2>
+        <p>当前版本不收集可用于识别你身份的个人信息，不使用 IDFA，不接入广告 SDK 或第三方分析 SDK，也不会跨其他公司的 App 和网站跟踪你。应用没有账号系统、云同步或开发者自建后端服务。</p>
+      </section>
+
+      <section>
+        <h2>4. 设备权限</h2>
+        <p>当前版本的核心计算功能不主动请求通讯录、照片、摄像头、麦克风或精准位置权限。如后续版本因新增功能需要使用新的设备权限，应用会在调用前通过系统提示说明用途，并同步更新本政策。</p>
+      </section>
+
+      <section>
+        <h2>5. 第三方平台服务</h2>
+        <p>应用通过 Apple App Store 分发。Apple 可能依据其自身政策处理购买、下载、系统诊断或商店账户相关信息；这些信息由 Apple 控制，车工快算不会从 Apple 获得你的完整付款信息。有关 Apple 的数据处理方式，请参阅 Apple 提供的隐私说明。</p>
+      </section>
+
+      <section>
+        <h2>6. 数据保存与删除</h2>
+        <p>本地数据保存在 iOS 应用沙盒中。你可以在应用内清除支持删除的历史记录，或通过卸载应用删除其本地数据。卸载后，应用沙盒中的数据通常会随应用一并移除；如你使用了 Apple 提供的设备备份能力，备份副本的保留与删除由你的 Apple 设置和 Apple 政策决定。</p>
+      </section>
+
+      <section>
+        <h2>7. 数据安全</h2>
+        <p>由于当前版本不把计算数据上传至开发者服务器，相关数据主要受 iOS 沙盒、设备锁和你的系统安全设置保护。请妥善保管设备，并避免在本地备注中记录不必要的敏感信息。</p>
+      </section>
+
+      <section>
+        <h2>8. 儿童隐私</h2>
+        <p>车工快算是面向车工、数控操作员及相关学习人员的专业计算工具，不以儿童为目标用户，也不会主动收集儿童的个人信息。</p>
+      </section>
+
+      <section>
+        <h2>9. 政策更新</h2>
+        <p>如果应用功能、第三方服务或数据处理方式发生变化，我们会在变更生效前更新本页面，并修订生效日期。建议你在应用更新后再次查看本政策。</p>
+      </section>
+
+      <section>
+        <h2>10. 联系我们</h2>
+        <p>如对本政策或应用的数据处理方式有疑问，请访问<a href="./support.html">技术支持页面</a>，或通过 <a href="https://github.com/workyan/docs/issues">GitHub Issues</a> 提交问题。请勿在公开问题中填写个人身份信息、联系方式或其他敏感数据。</p>
+      </section>
+    </article>
+
+    <footer>
+      <span>© 2026 车工快算</span>
+      <a href="./support.html">前往技术支持 →</a>
+    </footer>
+  </main>
+</body>
+</html>

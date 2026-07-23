@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#143a31">
+  <meta name="description" content="车工快算-数控车床计算器技术支持与常见问题。">
+  <link rel="icon" href="data:,">
+  <title>技术支持｜车工快算</title>
+  <style>
+    :root {
+      --ink: #14201d;
+      --muted: #5d6c67;
+      --paper: #f4f1e8;
+      --surface: #fffdf8;
+      --line: #d5d5c9;
+      --accent: #0b765e;
+      --deep: #143a31;
+      --soft: #dfece6;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(20, 58, 49, .045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 58, 49, .045) 1px, transparent 1px),
+        var(--paper);
+      background-size: 32px 32px;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+        "Microsoft YaHei", "Segoe UI", sans-serif;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 650;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover { color: var(--deep); }
+
+    .topbar {
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent) 0 72%, var(--deep) 72%);
+    }
+
+    main {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: clamp(40px, 8vw, 88px) 0 72px;
+    }
+
+    header {
+      position: relative;
+      padding: 0 0 clamp(34px, 6vw, 58px);
+      border-bottom: 1px solid var(--line);
+      animation: rise .55s ease-out both;
+    }
+
+    header::after {
+      content: "R";
+      position: absolute;
+      right: 0;
+      bottom: 22px;
+      color: rgba(11, 118, 94, .13);
+      font: 700 clamp(76px, 14vw, 140px)/1 ui-monospace, monospace;
+      pointer-events: none;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 42px;
+      color: var(--deep);
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    .brand-mark {
+      width: 18px;
+      height: 18px;
+      border: 5px solid var(--accent);
+      border-radius: 50%;
+      box-shadow: 0 0 0 2px var(--surface), 0 0 0 3px var(--accent);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font: 700 13px/1.3 ui-monospace, "SFMono-Regular", Menlo, monospace;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+      letter-spacing: -.025em;
+    }
+
+    h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0;
+      font-size: clamp(38px, 8vw, 68px);
+    }
+
+    .lead {
+      position: relative;
+      z-index: 1;
+      max-width: 650px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .action {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 32px 0 50px;
+      padding: 13px 18px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease;
+      animation: rise .55s .1s ease-out both;
+    }
+
+    .action:hover {
+      color: white;
+      background: var(--deep);
+      transform: translateY(-2px);
+    }
+
+    article {
+      padding: clamp(26px, 5vw, 48px);
+      border: 1px solid var(--line);
+      background: var(--surface);
+      box-shadow: 0 24px 70px rgba(20, 32, 29, .08);
+      animation: rise .55s .18s ease-out both;
+    }
+
+    section + section {
+      margin-top: 34px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--deep);
+      font-size: clamp(21px, 4vw, 26px);
+    }
+
+    p { margin: 0; }
+
+    p + p, ol { margin-top: 12px; }
+
+    ol {
+      margin-bottom: 0;
+      padding-left: 1.35em;
+    }
+
+    li + li { margin-top: 7px; }
+
+    .faq {
+      display: grid;
+      gap: 0;
+    }
+
+    details {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    details:last-child { border-bottom: 0; }
+
+    summary {
+      cursor: pointer;
+      color: var(--deep);
+      font-weight: 750;
+      list-style-position: outside;
+    }
+
+    details p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .notice {
+      margin-top: 14px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: var(--soft);
+    }
+
+    .urls {
+      overflow-wrap: anywhere;
+      font-size: 15px;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      padding-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 560px) {
+      main { width: min(100% - 22px, 900px); padding-top: 30px; }
+      .brand { margin-bottom: 32px; }
+      header::after { bottom: 18px; }
+      article { padding: 24px 20px; }
+      .action { width: 100%; justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar" aria-hidden="true"></div>
+  <main>
+    <header>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span>车工快算</div>
+      <p class="eyebrow">Product Support · iOS</p>
+      <h1>技术支持</h1>
+      <p class="lead">车工快算是一款面向数控车床操作员与车工的离线现场计算工具。这里提供问题反馈方式、常见问题与使用边界说明。</p>
+    </header>
+
+    <a class="action" href="https://github.com/workyan/docs/issues/new">提交问题反馈 <span aria-hidden="true">→</span></a>
+
+    <article>
+      <section>
+        <h2>反馈问题</h2>
+        <p>请通过 GitHub Issues 联系开发者。为了更快定位问题，建议在反馈中提供：</p>
+        <ol>
+          <li>设备型号、iOS 版本和车工快算版本；</li>
+          <li>所使用的计算模块，例如圆弧切点、锥度或螺纹速查；</li>
+          <li>输入值、单位、操作步骤、预期结果与实际结果；</li>
+          <li>必要时附上不含个人或商业敏感信息的截图。</li>
+        </ol>
+        <div class="notice">请勿在公开 Issue 中提交真实姓名、电话、邮箱、工件图纸、客户资料或其他敏感信息。</div>
+      </section>
+
+      <section>
+        <h2>常见问题</h2>
+        <div class="faq">
+          <details>
+            <summary>是否需要注册账号或联网？</summary>
+            <p>不需要。当前版本没有注册、登录或云同步，核心计算功能可离线使用。</p>
+          </details>
+          <details>
+            <summary>输入和历史记录会上传服务器吗？</summary>
+            <p>不会。计算输入、结果、历史、收藏、备注和偏好仅保存在当前设备本机。详情请查看隐私政策。</p>
+          </details>
+          <details>
+            <summary>如何删除本地记录？</summary>
+            <p>你可以在应用内清除历史记录。卸载应用通常也会删除其 iOS 应用沙盒中的本地数据。</p>
+          </details>
+          <details>
+            <summary>计算结果能否直接用于机床加工？</summary>
+            <p>车工快算提供通用计算与复核参考，不连接机床，也不生成可直接执行的完整 G-code。正式加工前，请结合图纸、工艺要求、刀具补偿、机床与控制器说明进行独立复核。</p>
+          </details>
+          <details>
+            <summary>为什么没有找到某种控制器或工艺参数？</summary>
+            <p>不同机床、控制器、刀具和企业工艺存在差异。当前版本仅展示已支持并经过验证的通用计算；你可以提交 Issue 描述希望增加的场景。</p>
+          </details>
+        </div>
+      </section>
+
+      <section>
+        <h2>使用与安全说明</h2>
+        <p>本应用是计算辅助工具，不能替代图纸审查、工艺人员判断、机床说明书、量具实测或安全操作规程。请在试切和正式加工前复核单位、坐标方向、半径/直径编程方式、刀尖圆弧补偿与边界条件。</p>
+      </section>
+
+      <section>
+        <h2>隐私政策</h2>
+        <p>了解本地数据保存、权限与删除方式，请阅读<a href="./privacy.html">车工快算隐私政策</a>。</p>
+      </section>
+
+      <section class="urls">
+        <h2>页面地址</h2>
+        <p>技术支持：<a href="https://workyan.github.io/docs/chegong-kuaisuan/support.html">https://workyan.github.io/docs/chegong-kuaisuan/support.html</a></p>
+        <p>隐私政策：<a href="https://workyan.github.io/docs/chegong-kuaisuan/privacy.html">https://workyan.github.io/docs/chegong-kuaisuan/privacy.html</a></p>
+      </section>
+    </article>
+
+    <footer>
+      <span>© 2026 车工快算</span>
+      <a href="./privacy.html">查看隐私政策 →</a>
+    </footer>
+  </main>
+</body>
+</html>
